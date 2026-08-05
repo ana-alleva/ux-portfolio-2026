@@ -1,9 +1,10 @@
 import { heroData } from "@/data/hero";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 export function Hero() {
   return (
-    <section className="flex flex-row justify-center items-center gap:4 md:gap-8 p-8">
+    <section className="flex flex-row justify-center items-center gap-4 md:gap-8 p-8 mt-20">
       <div>
         <p className="text-xs md:text-sm text-center uppercase tracking-[0.3em] text-primary">
           {heroData.badge}
@@ -18,6 +19,13 @@ export function Hero() {
         </div>
         <div className="flex mt-4 gap-4 justify-center">
           <Button>{heroData.buttonPrimary}</Button>
+        </div>
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          {heroData.badges.map((badge) => (
+            <Badge key={badge} variant="outline">
+              {badge}
+            </Badge>
+          ))}
         </div>
       </div>
     </section>

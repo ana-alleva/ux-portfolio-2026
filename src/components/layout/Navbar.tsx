@@ -6,7 +6,7 @@ import { navData } from "@/data/navBar";
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="px-4 py-2 w-full flex justify-between items-center border-b dark border-muted-foreground">
+    <div className="fixed top-0 left-0 z-50 backdrop-blur-md bg-background/50 px-4 py-2 w-full flex justify-between items-center border-b dark border-muted-foreground">
       <h1 className="flex text-white text-base">{navData.title}</h1>
       <nav className=" flex items-center justify-center">
         <ul className="hidden md:flex items-center gap-4 rounded-xl p-4">

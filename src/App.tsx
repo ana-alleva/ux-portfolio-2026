@@ -1,5 +1,7 @@
 import { Navbar } from "./components/layout/Navbar";
+import { FeaturedProjects } from "./components/section/FeaturedProjects";
 import { Hero } from "./components/section/Hero";
+import { Methodology } from "./components/section/Methodology";
 
 function App() {
   return (
@@ -7,7 +9,8 @@ function App() {
       <div className="w-full">
         <Navbar />
         <Hero />
-        <h1>hola rwekwe</h1>
+        <FeaturedProjects />
+        <Methodology />
       </div>
     </main>
   );
