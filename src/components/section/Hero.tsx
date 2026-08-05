@@ -1,30 +1,23 @@
+import { heroData } from "@/data/hero";
 import { Button } from "@/components/ui/button";
-import Img from "@/assets/alleva-ana.png";
 
 export function Hero() {
   return (
-    <section className="flex flex-row justify-center items-center gap-8 p-6">
+    <section className="flex flex-row justify-center items-center gap:4 md:gap-8 p-8">
       <div>
-        <img className="size-96 rounded-full" src={Img} alt="profile-pic" />
-      </div>
-      <div>
-        <p className="text-sm uppercase tracking-[0.3em] text-neutral-400">
-          UX Researcher & Product Designer
+        <p className="text-xs md:text-sm text-center uppercase tracking-[0.3em] text-primary">
+          {heroData.badge}
         </p>
-        <div>
-          <h1 className="mt-6 mb-0 max-w-4xl text-6xl font-bold leading-none md:text-8xl text-white">
-            Ana Clara Alleva
+        <div className="flex flex-col items-center justify-center gap-4">
+          <h1 className="md:mt-6 mt-2 text-center mb-0 max-w-4xl text-3xl md:text-6xl font-bold leading-none lg:text-8xl text-white">
+            {heroData.title}
           </h1>
-          <p className="max-w-xl text-lg text-neutral-400">
-            Creating thoughtful digital experiences through research, strategy
-            and design.
+          <p className="max-w-xl text-center text-xs md:text-lg text-primary">
+            {heroData.description}
           </p>
         </div>
-
-        <div className="mt-10 flex gap-4">
-          <Button>View Work</Button>
-
-          <Button variant="outline">Download CV</Button>
+        <div className="flex mt-4 gap-4 justify-center">
+          <Button>{heroData.buttonPrimary}</Button>
         </div>
       </div>
     </section>

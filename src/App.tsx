@@ -7,6 +7,7 @@ function App() {
       <div className="w-full">
         <Navbar />
         <Hero />
+        <h1>hola rwekwe</h1>
       </div>
     </main>
   );
