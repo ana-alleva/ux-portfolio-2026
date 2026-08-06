@@ -1,6 +1,6 @@
 import { Link, Navigate, useParams } from "react-router";
-import { ArrowLeft } from "lucide-react";
-
+import { ArrowLeft, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/layout/Navbar";
 import { Badge } from "@/components/ui/badge";
 import { caseStudies } from "@/data/caseStudies";
@@ -25,18 +25,18 @@ export function CaseStudy() {
     <main className="min-h-screen bg-background">
       <Navbar />
 
-      <section className="mx-auto max-w-7xl px-4 pb-20 pt-32 md:px-8">
-        <Link
-          to="/"
-          className="inline-flex items-center gap-2 text-primary transition hover:text-pink-500"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back to Portfolio
-        </Link>
+      <section className="mx-auto max-w-7xl pb-20 md:pt-32 px-8">
+        <div className="flex flex-col gap-4 mt-16 md:mt-4">
+          <Link
+            to="/"
+            className="inline-flex items-center gap-2 text-primary transition hover:text-pink-500"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back to Portfolio
+          </Link>
 
-        <Badge variant="outline" className="mt-16">
-          {caseStudy.hero.badge}
-        </Badge>
+          <Badge variant="outline">{caseStudy.hero.badge}</Badge>
+        </div>
 
         <h1 className="mt-8 max-w-5xl text-5xl leading-none text-white md:text-8xl">
           {caseStudy.hero.title}
@@ -45,6 +45,25 @@ export function CaseStudy() {
         <p className="mt-8 max-w-3xl text-xl leading-8 text-primary">
           {caseStudy.hero.description}
         </p>
+
+        {caseStudy.hero.actions?.length > 0 && (
+          <div className="mt-8 flex flex-wrap gap-4">
+            {caseStudy.hero.actions.map((action) => (
+              <a
+                key={action.label}
+                href={action.href}
+                target={action.external ? "_blank" : undefined}
+                rel={action.external ? "noreferrer" : undefined}
+                className="inline-flex"
+              >
+                <Button variant="outline">
+                  {action.label}
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                </Button>
+              </a>
+            ))}
+          </div>
+        )}
 
         <img
           src={caseStudy.hero.image}

@@ -6,188 +6,199 @@ import atalaSolution3 from "@/assets/atala/solution-3.png";
 
 import airforceHero from "@/assets/airforce/hero.png";
 import airforceResearch from "@/assets/airforce/research.png";
-// import airforceProcess from "@/assets/airforce/process.png";
-// import airforceSolution1 from "@/assets/airforce/solution-1.png";
-// import airforceSolution2 from "@/assets/airforce/solution-2.png";
-// import airforceSolution3 from "@/assets/airforce/solution-3.png";
+import airforceSolution1 from "@/assets/airforce/solution-1.png";
+import airforceSolution2 from "@/assets/airforce/solution-2.png";
+import airforceSolution3 from "@/assets/airforce/solution-3.png";
 
 export const caseStudies = [
   {
-    slug: "construction-management",
+    slug: "rh-ai-product",
 
     hero: {
-      badge: "Enterprise SaaS • Product Design",
-      title: "Construction Management Platform",
+      badge: "AI Product • Discovery • Recruitment",
+      title: "Airforce AI Workspace",
       description:
-        "Redesigned complex workflows and dashboards for construction teams.",
+        "Designing an AI-powered workspace that helps recruiters organize candidates, manage documents, and retrieve information through a conversational interface.",
 
-      image: atalaHero,
+      image: airforceHero,
+
+      actions: [
+        {
+          label: "View Prototype",
+          href: "PEGÁ_ACÁ_EL_LINK_REAL",
+          external: true,
+        },
+      ],
     },
+
     overview: {
       badge: "Overview",
-      title: "Project Overview",
+      title: "Designing a Conversational Recruiting Workspace",
       description:
-        "I redesigned a complex construction management platform to help teams create projects, monitor progress, manage information, and make operational decisions with greater clarity.",
+        "Airforce was an internal AI product developed at Aluxion during the discovery phase. The goal was to rethink how recruiters access candidate information by combining AI conversations, document management, and multiple workspaces into a single product experience.",
 
       details: [
         {
+          label: "Company",
+          value: "Aluxion",
+        },
+        {
           label: "Role",
-          value: "Senior Product Designer",
+          value: "Visual Designer",
         },
         {
-          label: "Duration",
-          value: "6 months",
-        },
-        {
-          label: "Team",
-          value: "Product, Engineering & Stakeholders",
+          label: "Stage",
+          value: "Product Discovery",
         },
         {
           label: "Platform",
-          value: "Enterprise SaaS",
+          value: "AI Recruiting Workspace",
         },
       ],
     },
+
     challenge: {
       badge: "The Challenge",
-
-      title: "Understanding the Problem",
-
+      title: "Helping Recruiters Navigate Complex Information",
       description:
-        "Construction teams struggled with fragmented workflows, difficult navigation, and poor visibility into project progress.",
+        "Recruiters often move between candidates, CVs, documents, conversations, and hiring processes. The challenge was to create a conversational experience that gave users fast access to information while keeping multiple workspaces and chat histories organized.",
 
       cards: [
         {
-          title: "Fragmented Navigation",
+          title: "Multiple Workspaces",
           description:
-            "Users had to move through multiple disconnected screens to complete common tasks.",
+            "Users needed to manage several recruiting processes simultaneously without losing context or conversation history.",
         },
         {
-          title: "Information Overload",
+          title: "Conversational Access",
           description:
-            "Critical information competed for attention, making decision-making slower.",
+            "Candidate information needed to be accessible through natural-language interactions instead of relying only on traditional navigation and filters.",
         },
         {
-          title: "Steep Learning Curve",
+          title: "Context Preservation",
           description:
-            "New users required significant onboarding before becoming productive.",
+            "Each workspace needed to retain its own chats, files, CVs, and generated content while remaining easy to navigate.",
         },
       ],
     },
-    research: {
-      badge: "Research",
-      title: "Research & Discovery",
 
+    research: {
+      badge: "Collaboration",
+      title: "From Research to Interface",
       description:
-        "Through stakeholder interviews, contextual inquiry and workflow analysis, I identified the main pain points affecting productivity and decision making.",
+        "I worked within a three-person design team and collaborated closely with the UX Researcher. My role was to translate research findings into interaction flows and polished interfaces, while iterating with developers throughout the discovery process.",
 
       metrics: [
         {
-          value: "12",
-          label: "Stakeholder Interviews",
+          value: "3",
+          label: "Designers",
         },
         {
-          value: "8",
-          label: "Workshops",
+          value: "AI",
+          label: "Product",
         },
         {
-          value: "14",
-          label: "User Flows",
+          value: "React",
+          label: "Implementation",
         },
         {
-          value: "40hr",
-          label: "Research Time",
+          value: "Discovery",
+          label: "Phase",
         },
       ],
 
-      image: atalaResearch,
+      image: airforceResearch,
     },
+
     insights: {
       badge: "Key Insights",
-
-      title: "What We Learned",
-
+      title: "Design Principles",
       description:
-        "Research revealed recurring patterns that informed every design decision throughout the project.",
+        "The product became more understandable when workspaces, conversations, files, and histories were treated as parts of one connected system rather than separate features.",
 
       cards: [
         {
           number: "01",
-          title: "Mental Models",
+          title: "Workspace First",
           description:
-            "Users expected workflows to match the real-world construction process.",
+            "Recruiters think in terms of hiring processes and projects, not isolated conversations.",
         },
         {
           number: "02",
-          title: "Reduce Cognitive Load",
+          title: "Conversation as Navigation",
           description:
-            "Prioritizing actions over excessive information improved usability.",
+            "The chat became the primary interface for retrieving candidate information, extracting text, generating content, and viewing statistics.",
         },
         {
           number: "03",
-          title: "Scalable Components",
+          title: "Reduce Context Switching",
           description:
-            "Reusable patterns reduced implementation effort and improved consistency.",
+            "Keeping conversations, CVs, files, and generated content together reduced unnecessary navigation between tools.",
         },
       ],
     },
+
     solution: {
       badge: "The Solution",
-      title: "Designing a Clearer Product Experience",
+      title: "Building an AI Workspace for Recruiters",
       description:
-        "I translated the research findings into focused product improvements that simplified critical workflows and created a more scalable interface.",
+        "My work focused on the core product experience: creating workspaces, switching between them, preserving chat histories, and supporting recruiters through a conversational interface.",
 
       features: [
         {
-          eyebrow: "Solution 01",
-          title: "Unified Dashboard",
+          eyebrow: "Workspace Creation",
+          title: "Organizing Recruiting Projects",
           description:
-            "A centralized dashboard gives users immediate visibility into project status, priorities, risks, and the actions that require attention.",
-          image: atalaSolution1,
+            "I designed the flows for creating, organizing, and switching between workspaces, helping recruiters manage several hiring processes without losing context.",
+          image: airforceSolution1,
         },
         {
-          eyebrow: "Solution 02",
-          title: "Simplified Workflow Builder",
+          eyebrow: "AI Conversation",
+          title: "Accessing Candidate Information Through Chat",
           description:
-            "A guided workflow reduces cognitive load by breaking complex configuration into clear, predictable steps.",
-          image: atalaSolution2,
+            "The chat interface allowed recruiters to upload CVs and files, ask questions, extract information, generate content, and access statistics without leaving the conversation.",
+          image: airforceSolution2,
         },
         {
-          eyebrow: "Solution 03",
-          title: "Contextual Notifications",
+          eyebrow: "Supporting Flows",
+          title: "Authentication, Accounts, and Payments",
           description:
-            "Notifications were redesigned around urgency, context, and the next action users needed to take.",
-          image: atalaSolution3,
+            "I also designed supporting flows including login, workspace management, and payment-related screens to create a complete end-to-end experience.",
+          image: airforceSolution3,
         },
       ],
     },
+
     results: {
       badge: "Results & Learnings",
-
-      title: "Measurable Impact",
-
+      title: "What I Learned",
       description:
-        "The redesign simplified critical workflows, improved usability, and created a stronger foundation for future product growth.",
+        "Airforce was developed as a functional internal discovery initiative, although it was not ultimately commercialized. The project strengthened my experience designing AI-first products, translating research into visual solutions, and contributing to React implementation.",
 
       metrics: [
         {
-          value: "+40%",
-          label: "Faster Task Completion",
+          value: "AI",
+          label: "Product",
         },
         {
-          value: "-32%",
-          label: "Reduced User Errors",
+          value: "React",
+          label: "Implementation",
         },
         {
-          value: "98%",
-          label: "Positive User Feedback",
+          value: "Discovery",
+          label: "Delivered",
+        },
+        {
+          value: "3",
+          label: "Design Team",
         },
       ],
 
       learnings: [
-        "Validate assumptions early through continuous user research.",
-        "Design around users' mental models instead of system constraints.",
-        "A scalable design system accelerates product development and consistency.",
+        "AI interactions need to feel predictable, understandable, and connected to a clear product structure.",
+        "The workspace model helped users organize several recruiting processes without losing context.",
+        "Chat history, files, CVs, and generated content needed to behave as one coherent system.",
+        "Working directly with React improved collaboration between design and development.",
       ],
     },
   },

@@ -1,41 +1,49 @@
-import project1 from "@/assets/project-1.png";
-import project2 from "@/assets/project-2.png";
-import project3 from "@/assets/project-3.png";
+import airforceHero from "@/assets/airforce/hero.png";
+import atalaHero from "@/assets/atala/hero.png";
+
+/*
+  Por ahora, hasta que tengas una imagen propia para el proyecto de viajes,
+  usamos un placeholder.
+
+  Después podés reemplazar este import por:
+  import travelHero from "@/assets/travel/hero.png";
+*/
+import travelPlaceholder from "@/assets/project-3.png";
 
 export const featuredProjectsData = {
   badge: "Selected Work",
   title: "Featured Projects",
   description:
-    "A selection of projects where I combined research, strategy, and visual design to solve complex product challenges.",
+    "A selection of projects across AI products, UX research, visual design, and complex digital ecosystems.",
   link: "Read Case Study",
 
   projects: [
     {
       id: "01",
-      slug: "construction-management",
-      title: "Construction Management Platform",
+      slug: "rh-ai-product",
+      title: "Airforce AI Workspace",
       description:
-        "Redesigned the dashboard and project creation flow for a SaaS platform used by construction teams.",
-      tags: ["UX Research", "UI Design", "Design System"],
-      image: project1,
+        "An AI-powered recruiting workspace designed to help users manage candidates, documents, conversations, and multiple hiring processes.",
+      tags: ["AI Product", "Visual Design", "React"],
+      image: airforceHero,
     },
     {
       id: "02",
-      slug: "ecommerce-checkout",
-      title: "E-commerce Checkout",
+      slug: "travel-insurance-audit",
+      title: "Travel Insurance UX Audit",
       description:
-        "Improved the checkout experience to reduce friction and increase conversion.",
-      tags: ["E-commerce", "UX", "Prototype"],
-      image: project2,
+        "A UX audit and competitive benchmark focused on improving quote speed, plan comparison, clarity, and purchase confidence.",
+      tags: ["UX Research", "Heuristic Audit", "Benchmark"],
+      image: travelPlaceholder,
     },
     {
       id: "03",
-      slug: "ai-recruitment-platform",
-      title: "AI Recruitment Platform",
+      slug: "atala-prism",
+      title: "THIS IS A PLACEHOLDER",
       description:
-        "Designed AI-assisted workflows for candidate matching, content generation, and workspace management.",
-      tags: ["AI Product", "UX/UI", "SaaS"],
-      image: project3,
+        "This card is temporarily using placeholder content while the final Atala PRISM case study presentation is being completed.",
+      tags: ["Placeholder", "Work in Progress", "Coming Soon"],
+      image: atalaHero,
     },
   ],
 };
