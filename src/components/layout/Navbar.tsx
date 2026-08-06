@@ -13,7 +13,7 @@ export function Navbar() {
           <li>
             <a
               className="text-white py-2 px-4 transition-all duration-300 hover:text-pink-500 rounded-md"
-              href="#"
+              href="#featuredProjects"
             >
               {navData.work}
             </a>
@@ -21,7 +21,7 @@ export function Navbar() {
           <li>
             <a
               className="text-white py-2 px-4 transition-all duration-300 hover:text-pink-500 rounded-md"
-              href="#"
+              href="#Methodology"
             >
               {navData.process}
             </a>
@@ -29,7 +29,7 @@ export function Navbar() {
           <li>
             <a
               className="text-white py-2 px-4 transition-all duration-300 hover:text-pink-500 rounded-md"
-              href="#"
+              href="#experience"
             >
               {navData.experience}
             </a>
@@ -37,13 +37,15 @@ export function Navbar() {
           <li>
             <a
               className="text-white py-2 px-4 transition-all duration-300 hover:text-pink-500 rounded-md"
-              href="#"
+              href="#skills"
             >
               {navData.about}
             </a>
           </li>
           <li>
-            <Button variant="outline">{navData.button}</Button>
+            <a href="#contact">
+              <Button variant="outline">{navData.button}</Button>
+            </a>
           </li>
         </ul>
       </nav>
@@ -55,11 +57,11 @@ export function Navbar() {
       </Button>
       {menuOpen && (
         <div className="absolute top-11 right-4 bg-background border border-muted-foreground rounded-lg p-2">
-          <ul>
+          <ul className="flex flex-col gap-2">
             <li>
               <a
                 className="text-base text-white py-2 transition-all duration-300 hover:text-pink-500 rounded-md"
-                href="#"
+                href="#featuredProjects"
               >
                 {navData.work}
               </a>
@@ -67,7 +69,7 @@ export function Navbar() {
             <li>
               <a
                 className="text-base text-white py-2 transition-all duration-300 hover:text-pink-500 rounded-md"
-                href="#"
+                href="#Methodology"
               >
                 {navData.process}
               </a>
@@ -75,7 +77,7 @@ export function Navbar() {
             <li>
               <a
                 className="text-base text-white py-2 transition-all duration-300 hover:text-pink-500 rounded-md"
-                href="#"
+                href="#experience"
               >
                 {navData.experience}
               </a>
@@ -83,13 +85,15 @@ export function Navbar() {
             <li>
               <a
                 className="text-base text-white py-2 transition-all duration-300 hover:text-pink-500 rounded-md"
-                href="#"
+                href="#skills"
               >
                 {navData.about}
               </a>
             </li>
             <li>
-              <Button variant="outline">{navData.button}</Button>
+              <a href="#contact">
+                <Button variant="outline">{navData.button}</Button>
+              </a>
             </li>
           </ul>
         </div>
