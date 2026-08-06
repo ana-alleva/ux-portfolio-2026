@@ -6,6 +6,8 @@ import { Badge } from "@/components/ui/badge";
 import { caseStudies } from "@/data/caseStudies";
 import { CaseStudyOverview } from "@/components/caseStudy/CaseStudyOverview";
 import { CaseStudyChallenge } from "@/components/caseStudy/CaseStudyChallenge";
+import { CaseStudyResearch } from "@/components/caseStudy/CaseStudyResearch";
+import { CaseStudyInsights } from "@/components/caseStudy/CaseStudyInsights";
 
 export function CaseStudy() {
   const { slug } = useParams();
@@ -59,6 +61,19 @@ export function CaseStudy() {
           title={caseStudy.challenge.title}
           description={caseStudy.challenge.description}
           cards={caseStudy.challenge.cards}
+        />
+        <CaseStudyResearch
+          badge={caseStudy.research.badge}
+          title={caseStudy.research.title}
+          description={caseStudy.research.description}
+          metrics={caseStudy.research.metrics}
+          image={caseStudy.research.image}
+        />
+        <CaseStudyInsights
+          badge={caseStudy.insights.badge}
+          title={caseStudy.insights.title}
+          description={caseStudy.insights.description}
+          cards={caseStudy.insights.cards}
         />
       </section>
     </main>
