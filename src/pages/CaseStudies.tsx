@@ -51,7 +51,7 @@ export function CaseStudy() {
           alt={caseStudy.hero.title}
           draggable={false}
           onContextMenu={(event) => event.preventDefault()}
-          className="mt-20 w-full rounded-3xl object-cover"
+          className="mt-8 md:mt-20 h-auto w-full rounded-xl md:rounded-3xl object-contain md:object-cover"
         />
         <CaseStudyOverview
           badge={caseStudy.overview.badge}

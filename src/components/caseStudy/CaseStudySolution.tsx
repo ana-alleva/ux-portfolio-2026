@@ -21,7 +21,7 @@ export function CaseStudySolution({
   features,
 }: CaseStudySolutionProps) {
   return (
-    <section className="border-b border-border py-20 md:py-28">
+    <section className="border-b border-border pt-4 md:py-20 lg:py-28">
       <Badge variant="outline">{badge}</Badge>
 
       <h2 className="mt-6 max-w-4xl text-4xl leading-none text-white md:text-6xl">
@@ -57,7 +57,7 @@ export function CaseStudySolution({
               alt={feature.title}
               draggable={false}
               onContextMenu={(event) => event.preventDefault()}
-              className="pointer-events-none h-[300px] w-full select-none rounded-3xl object-cover md:h-auto"
+              className="pointer-events-none h-auto md:h-[300px] w-full select-none rounded-3xl object-cover md:h-auto"
             />
           </article>
         ))}

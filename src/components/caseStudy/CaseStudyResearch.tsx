@@ -21,7 +21,7 @@ export function CaseStudyResearch({
   image,
 }: CaseStudyResearchProps) {
   return (
-    <section className="py-28">
+    <section className="pt-4 md:py-20 lg:py-28">
       <Badge variant="outline">{badge}</Badge>
 
       <div className="mt-8 grid gap-16 lg:grid-cols-[2fr_1fr]">
@@ -47,7 +47,7 @@ export function CaseStudyResearch({
         alt={title}
         draggable={false}
         onContextMenu={(e) => e.preventDefault()}
-        className="mt-16 w-full rounded-3xl object-cover"
+        className="mt-16 block h-auto max-h-none w-full max-w-full rounded-2xl object-contain md:rounded-3xl"
       />
     </section>
   );

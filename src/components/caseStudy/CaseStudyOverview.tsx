@@ -19,7 +19,7 @@ export function CaseStudyOverview({
   details,
 }: CaseStudyOverviewProps) {
   return (
-    <section className="border-b border-border py-20 md:py-28">
+    <section className="border-b border-border pt-4 md:py-20 lg:py-28">
       <div className="grid gap-12 lg:grid-cols-[1.4fr_0.6fr] lg:gap-20">
         <div>
           <Badge variant="outline">{badge}</Badge>

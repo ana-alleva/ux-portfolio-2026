@@ -19,7 +19,7 @@ export function CaseStudyChallenge({
   cards,
 }: CaseStudyChallengeProps) {
   return (
-    <section className="py-28">
+    <section className="pt-4 md:py-20 lg:py-28">
       <Badge variant="outline">{badge}</Badge>
 
       <h2 className="mt-6 text-5xl text-white">{title}</h2>
