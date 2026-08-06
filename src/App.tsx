@@ -1,7 +1,9 @@
 import { Navbar } from "./components/layout/Navbar";
+import { Experience } from "./components/section/Experience";
 import { FeaturedProjects } from "./components/section/FeaturedProjects";
 import { Hero } from "./components/section/Hero";
 import { Methodology } from "./components/section/Methodology";
+import { Skills } from "./components/section/Skills";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         <Hero />
         <FeaturedProjects />
         <Methodology />
+        <Experience />
+        <Skills />
       </div>
     </main>
   );
