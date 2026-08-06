@@ -4,7 +4,7 @@ import { cards } from "@/data/cards";
 
 export function Methodology() {
   return (
-    <section id="methodology" className="px-8 py-24">
+    <section id="methodology" className="px-8 py-8 md:py-24">
       <div className="mx-auto max-w-7xl">
         <Badge>{cards.badge}</Badge>
 

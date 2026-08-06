@@ -11,6 +11,7 @@ import { CaseStudyInsights } from "@/components/caseStudy/CaseStudyInsights";
 import { CaseStudySolution } from "@/components/caseStudy/CaseStudySolution";
 import { Footer } from "@/components/layout/Footer";
 import { CaseStudyResults } from "@/components/caseStudy/CaseStudyResults";
+import { CaseStudyNavigation } from "@/components/caseStudy/CaseStudyNavigation";
 
 export function CaseStudy() {
   const { slug } = useParams();
@@ -110,6 +111,7 @@ export function CaseStudy() {
           metrics={caseStudy.results.metrics}
           learnings={caseStudy.results.learnings}
         />
+        <CaseStudyNavigation />
       </section>
       <Footer />
     </main>

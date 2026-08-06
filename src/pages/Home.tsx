@@ -9,7 +9,10 @@ import { Skills } from "@/components/section/Skills";
 
 export function Home() {
   return (
-    <main className="mx-auto min-h-screen max-w-[1440px] overflow-x-hidden">
+    <main
+      id="top"
+      className="mx-auto min-h-screen max-w-[1440px] overflow-x-hidden"
+    >
       <Navbar />
       <Hero />
       <FeaturedProjects />

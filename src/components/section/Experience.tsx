@@ -4,7 +4,7 @@ import { experienceData } from "@/data/experience";
 
 export function Experience() {
   return (
-    <section id="experience" className="px-8 py-24">
+    <section id="experience" className="px-8 py-8 md:py-24">
       <div className="mx-auto max-w-7xl">
         <Badge>{experienceData.badge}</Badge>
 

@@ -9,14 +9,14 @@ export function FeaturedProjects() {
     <section id="featuredProjects" className="scroll-mt-28 px-8 py-4">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
-        <Badge variant="outline">{featuredProjectsData.badge}</Badge>
+        <div className="mb-16 flex flex-col items-center text-center">
+          <Badge variant="outline">{featuredProjectsData.badge}</Badge>
 
-        <div className="mt-6 flex flex-col gap-4">
-          <h2 className="max-w-4xl text-3xl font-bold leading-none text-white md:text-5xl">
+          <h2 className="mt-6 max-w-4xl text-3xl font-bold leading-none text-white md:text-5xl">
             {featuredProjectsData.title}
           </h2>
 
-          <p className="max-w-2xl text-sm text-primary md:text-lg">
+          <p className="mt-4 max-w-2xl text-sm text-primary md:text-lg">
             {featuredProjectsData.description}
           </p>
         </div>

@@ -34,6 +34,20 @@ export function Hero() {
             </Badge>
           ))}
         </div>
+
+        {/* Worked with */}
+        <div className="mt-16 flex w-full flex-col items-center border-y border-white/10 py-10">
+          <p className="mb-8 text-xs uppercase tracking-[0.3em] text-primary">
+            Trusted by teams at
+          </p>
+
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 text-lg font-semibold tracking-wide text-white/70 md:text-xl">
+            <span>Nortal</span>
+            <span>IOHK</span>
+            <span>Aluxion</span>
+            <span>Atix Labs</span>
+          </div>
+        </div>
       </div>
     </section>
   );
