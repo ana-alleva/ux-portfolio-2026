@@ -30,7 +30,7 @@ export const caseStudies = [
 
       actions: [
         {
-          label: "View Prototype",
+          label: "View Live Experience",
           href: "https://www.amatravel.ca/",
           external: true,
         },
@@ -233,7 +233,7 @@ export const caseStudies = [
       actions: [
         {
           label: "View Prototype",
-          href: "PEGÁ_ACÁ_EL_LINK_REAL",
+          href: "https://www.figma.com/proto/6b8SRyuki2madfT3sDhYHF/Ana-Clara-Alleva---Portfolio?node-id=9-13971&viewport=42%2C774%2C0.22&t=zER39uegmfJrmeMm-1&scaling=contain&content-scaling=fixed&starting-point-node-id=9%3A13971&page-id=9%3A320",
           external: true,
         },
       ],
