@@ -8,6 +8,9 @@ import { CaseStudyOverview } from "@/components/caseStudy/CaseStudyOverview";
 import { CaseStudyChallenge } from "@/components/caseStudy/CaseStudyChallenge";
 import { CaseStudyResearch } from "@/components/caseStudy/CaseStudyResearch";
 import { CaseStudyInsights } from "@/components/caseStudy/CaseStudyInsights";
+import { CaseStudySolution } from "@/components/caseStudy/CaseStudySolution";
+import { Footer } from "@/components/layout/Footer";
+import { CaseStudyResults } from "@/components/caseStudy/CaseStudyResults";
 
 export function CaseStudy() {
   const { slug } = useParams();
@@ -75,7 +78,21 @@ export function CaseStudy() {
           description={caseStudy.insights.description}
           cards={caseStudy.insights.cards}
         />
+        <CaseStudySolution
+          badge={caseStudy.solution.badge}
+          title={caseStudy.solution.title}
+          description={caseStudy.solution.description}
+          features={caseStudy.solution.features}
+        />
+        <CaseStudyResults
+          badge={caseStudy.results.badge}
+          title={caseStudy.results.title}
+          description={caseStudy.results.description}
+          metrics={caseStudy.results.metrics}
+          learnings={caseStudy.results.learnings}
+        />
       </section>
+      <Footer />
     </main>
   );
 }

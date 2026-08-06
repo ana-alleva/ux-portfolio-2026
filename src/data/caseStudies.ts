@@ -1,9 +1,8 @@
 import atalaHero from "@/assets/atala/hero.png";
 import atalaResearch from "@/assets/atala/research.png";
-// import atalaProcess from "@/assets/atala/process.png";
-// import atalaSolution1 from "@/assets/atala/solution-1.png";
-// import atalaSolution2 from "@/assets/atala/solution-2.png";
-// import atalaSolution3 from "@/assets/atala/solution-3.png";
+import atalaSolution1 from "@/assets/atala/solution-1.png";
+import atalaSolution2 from "@/assets/atala/solution-2.png";
+import atalaSolution3 from "@/assets/atala/solution-3.png";
 
 import airforceHero from "@/assets/airforce/hero.png";
 import airforceResearch from "@/assets/airforce/research.png";
@@ -132,6 +131,65 @@ export const caseStudies = [
         },
       ],
     },
+    solution: {
+      badge: "The Solution",
+      title: "Designing a Clearer Product Experience",
+      description:
+        "I translated the research findings into focused product improvements that simplified critical workflows and created a more scalable interface.",
+
+      features: [
+        {
+          eyebrow: "Solution 01",
+          title: "Unified Dashboard",
+          description:
+            "A centralized dashboard gives users immediate visibility into project status, priorities, risks, and the actions that require attention.",
+          image: atalaSolution1,
+        },
+        {
+          eyebrow: "Solution 02",
+          title: "Simplified Workflow Builder",
+          description:
+            "A guided workflow reduces cognitive load by breaking complex configuration into clear, predictable steps.",
+          image: atalaSolution2,
+        },
+        {
+          eyebrow: "Solution 03",
+          title: "Contextual Notifications",
+          description:
+            "Notifications were redesigned around urgency, context, and the next action users needed to take.",
+          image: atalaSolution3,
+        },
+      ],
+    },
+    results: {
+      badge: "Results & Learnings",
+
+      title: "Measurable Impact",
+
+      description:
+        "The redesign simplified critical workflows, improved usability, and created a stronger foundation for future product growth.",
+
+      metrics: [
+        {
+          value: "+40%",
+          label: "Faster Task Completion",
+        },
+        {
+          value: "-32%",
+          label: "Reduced User Errors",
+        },
+        {
+          value: "98%",
+          label: "Positive User Feedback",
+        },
+      ],
+
+      learnings: [
+        "Validate assumptions early through continuous user research.",
+        "Design around users' mental models instead of system constraints.",
+        "A scalable design system accelerates product development and consistency.",
+      ],
+    },
   },
 
   {
@@ -253,6 +311,65 @@ export const caseStudies = [
         },
       ],
     },
+    solution: {
+      badge: "The Solution",
+      title: "Designing a Clearer Product Experience",
+      description:
+        "I translated the research findings into focused product improvements that simplified critical workflows and created a more scalable interface.",
+
+      features: [
+        {
+          eyebrow: "Solution 01",
+          title: "Unified Dashboard",
+          description:
+            "A centralized dashboard gives users immediate visibility into project status, priorities, risks, and the actions that require attention.",
+          image: atalaSolution1,
+        },
+        {
+          eyebrow: "Solution 02",
+          title: "Simplified Workflow Builder",
+          description:
+            "A guided workflow reduces cognitive load by breaking complex configuration into clear, predictable steps.",
+          image: atalaSolution2,
+        },
+        {
+          eyebrow: "Solution 03",
+          title: "Contextual Notifications",
+          description:
+            "Notifications were redesigned around urgency, context, and the next action users needed to take.",
+          image: atalaSolution3,
+        },
+      ],
+    },
+    results: {
+      badge: "Results & Learnings",
+
+      title: "Measurable Impact",
+
+      description:
+        "The redesign simplified critical workflows, improved usability, and created a stronger foundation for future product growth.",
+
+      metrics: [
+        {
+          value: "+40%",
+          label: "Faster Task Completion",
+        },
+        {
+          value: "-32%",
+          label: "Reduced User Errors",
+        },
+        {
+          value: "98%",
+          label: "Positive User Feedback",
+        },
+      ],
+
+      learnings: [
+        "Validate assumptions early through continuous user research.",
+        "Design around users' mental models instead of system constraints.",
+        "A scalable design system accelerates product development and consistency.",
+      ],
+    },
   },
 
   {
@@ -372,6 +489,65 @@ export const caseStudies = [
           description:
             "Reusable patterns reduced implementation effort and improved consistency.",
         },
+      ],
+    },
+    solution: {
+      badge: "The Solution",
+      title: "Designing a Clearer Product Experience",
+      description:
+        "I translated the research findings into focused product improvements that simplified critical workflows and created a more scalable interface.",
+
+      features: [
+        {
+          eyebrow: "Solution 01",
+          title: "Unified Dashboard",
+          description:
+            "A centralized dashboard gives users immediate visibility into project status, priorities, risks, and the actions that require attention.",
+          image: atalaSolution1,
+        },
+        {
+          eyebrow: "Solution 02",
+          title: "Simplified Workflow Builder",
+          description:
+            "A guided workflow reduces cognitive load by breaking complex configuration into clear, predictable steps.",
+          image: atalaSolution2,
+        },
+        {
+          eyebrow: "Solution 03",
+          title: "Contextual Notifications",
+          description:
+            "Notifications were redesigned around urgency, context, and the next action users needed to take.",
+          image: atalaSolution3,
+        },
+      ],
+    },
+    results: {
+      badge: "Results & Learnings",
+
+      title: "Measurable Impact",
+
+      description:
+        "The redesign simplified critical workflows, improved usability, and created a stronger foundation for future product growth.",
+
+      metrics: [
+        {
+          value: "+40%",
+          label: "Faster Task Completion",
+        },
+        {
+          value: "-32%",
+          label: "Reduced User Errors",
+        },
+        {
+          value: "98%",
+          label: "Positive User Feedback",
+        },
+      ],
+
+      learnings: [
+        "Validate assumptions early through continuous user research.",
+        "Design around users' mental models instead of system constraints.",
+        "A scalable design system accelerates product development and consistency.",
       ],
     },
   },
