@@ -1,5 +1,4 @@
 import { heroData } from "@/data/hero";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 export function Hero() {
@@ -16,9 +15,6 @@ export function Hero() {
           <p className="max-w-xl text-center text-xs md:text-lg text-primary">
             {heroData.description}
           </p>
-        </div>
-        <div className="flex mt-4 gap-4 justify-center">
-          <Button>{heroData.buttonPrimary}</Button>
         </div>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           {heroData.badges.map((badge) => (

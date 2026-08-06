@@ -1,14 +1,6 @@
 import airforceHero from "@/assets/airforce/hero.png";
 import atalaHero from "@/assets/atala/hero.png";
-
-/*
-  Por ahora, hasta que tengas una imagen propia para el proyecto de viajes,
-  usamos un placeholder.
-
-  Después podés reemplazar este import por:
-  import travelHero from "@/assets/travel/hero.png";
-*/
-import travelPlaceholder from "@/assets/project-3.png";
+import travelHero from "@/assets/travel/hero.png";
 
 export const featuredProjectsData = {
   badge: "Selected Work",
@@ -20,6 +12,15 @@ export const featuredProjectsData = {
   projects: [
     {
       id: "01",
+      slug: "travel-insurance-audit",
+      title: "Travel Insurance UX Audit",
+      description:
+        "A UX audit and competitive benchmark focused on improving quote speed, plan comparison, clarity, and purchase confidence.",
+      tags: ["UX Research", "Heuristic Audit", "Benchmark"],
+      image: travelHero,
+    },
+    {
+      id: "02",
       slug: "rh-ai-product",
       title: "Airforce AI Workspace",
       description:
@@ -28,21 +29,12 @@ export const featuredProjectsData = {
       image: airforceHero,
     },
     {
-      id: "02",
-      slug: "travel-insurance-audit",
-      title: "Travel Insurance UX Audit",
-      description:
-        "A UX audit and competitive benchmark focused on improving quote speed, plan comparison, clarity, and purchase confidence.",
-      tags: ["UX Research", "Heuristic Audit", "Benchmark"],
-      image: travelPlaceholder,
-    },
-    {
       id: "03",
       slug: "atala-prism",
-      title: "THIS IS A PLACEHOLDER",
+      title: "Atala PRISM",
       description:
-        "This card is temporarily using placeholder content while the final Atala PRISM case study presentation is being completed.",
-      tags: ["Placeholder", "Work in Progress", "Coming Soon"],
+        "Designed a decentralized identity ecosystem spanning a management console, mobile wallet, and browser extension for issuing, managing, and verifying digital credentials.",
+      tags: ["Identity", "Product Design", "React"],
       image: atalaHero,
     },
   ],

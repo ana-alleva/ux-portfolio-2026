@@ -3,6 +3,6 @@ export const navData = {
   work: "Work",
   process: "Process",
   experience: "Experience",
-  about: "About",
+  skills: "Skills",
   button: "Contact Me",
 };

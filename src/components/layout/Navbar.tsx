@@ -59,7 +59,7 @@ export function Navbar() {
 
           <li>
             <a href="/#skills" className={getLinkClass("#skills")}>
-              {navData.about}
+              {navData.skills}
             </a>
           </li>
 

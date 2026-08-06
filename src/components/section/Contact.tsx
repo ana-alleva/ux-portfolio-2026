@@ -29,7 +29,7 @@ export function Contact() {
               {contactData.buttons.linkedin.label}
             </a>
           </Button>
-
+          {/* 
           <Button asChild size="lg" variant="outline">
             <a href={contactData.buttons.email.href}>
               {contactData.buttons.email.label}
@@ -41,6 +41,7 @@ export function Contact() {
               {contactData.buttons.cv.label}
             </a>
           </Button>
+          */}
         </div>
       </div>
     </section>

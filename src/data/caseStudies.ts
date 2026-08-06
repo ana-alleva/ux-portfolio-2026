@@ -10,7 +10,215 @@ import airforceSolution1 from "@/assets/airforce/solution-1.png";
 import airforceSolution2 from "@/assets/airforce/solution-2.png";
 import airforceSolution3 from "@/assets/airforce/solution-3.png";
 
+import travelHero from "@/assets/travel/hero.png";
+import travelResearch from "@/assets/travel/research.png";
+import travelSolution1 from "@/assets/travel/solution-1.png";
+import travelSolution2 from "@/assets/travel/solution-2.png";
+import travelSolution3 from "@/assets/travel/solution-3.png";
+
 export const caseStudies = [
+  {
+    slug: "travel-insurance-audit",
+
+    hero: {
+      badge: "UX Research • Product Strategy • Audit",
+      title: "Travel Insurance UX Audit",
+      description:
+        "Conducted a heuristic evaluation and competitive benchmark to identify usability issues and recommend improvements for the travel insurance purchase experience.",
+
+      image: travelHero,
+
+      actions: [
+        {
+          label: "View Prototype",
+          href: "https://www.amatravel.ca/",
+          external: true,
+        },
+      ],
+    },
+
+    overview: {
+      badge: "Overview",
+      title: "Evaluating the Insurance Purchase Experience",
+      description:
+        "This project focused on evaluating the end-to-end experience of purchasing travel insurance. Through heuristic analysis, competitive benchmarking, and flow reviews, I identified usability issues and proposed improvements to simplify decision making and increase user confidence.",
+
+      details: [
+        {
+          label: "Role",
+          value: "UX Researcher & Product Designer",
+        },
+        {
+          label: "Scope",
+          value: "UX Audit",
+        },
+        {
+          label: "Methods",
+          value: "Heuristic Evaluation & Benchmark",
+        },
+        {
+          label: "Platform",
+          value: "Responsive Web",
+        },
+      ],
+    },
+
+    challenge: {
+      badge: "The Challenge",
+
+      title: "Helping Users Choose the Right Insurance Plan",
+
+      description:
+        "Purchasing travel insurance involves comparing coverage, understanding complex information, and making decisions under uncertainty. The goal was to identify friction throughout the purchase journey and recommend opportunities to improve usability and clarity.",
+
+      cards: [
+        {
+          title: "Complex Information",
+          description:
+            "Coverage details, exclusions, and pricing were difficult to compare, increasing users' cognitive load.",
+        },
+        {
+          title: "Decision Confidence",
+          description:
+            "Users lacked enough guidance to understand which insurance plan best matched their needs.",
+        },
+        {
+          title: "Purchase Friction",
+          description:
+            "Several interaction patterns introduced unnecessary steps and interrupted the buying flow.",
+        },
+      ],
+    },
+
+    research: {
+      badge: "Methodology",
+
+      title: "Research & Evaluation",
+
+      description:
+        "I evaluated the existing experience using UX heuristics, analyzed the complete purchase journey, and compared the product against competing travel insurance platforms to identify strengths, weaknesses, and opportunities for improvement.",
+
+      metrics: [
+        {
+          value: "UX",
+          label: "Heuristic Audit",
+        },
+        {
+          value: "Flow",
+          label: "Journey Analysis",
+        },
+        {
+          value: "Benchmark",
+          label: "Competitor Review",
+        },
+        {
+          value: "Strategy",
+          label: "Recommendations",
+        },
+      ],
+
+      image: travelResearch,
+    },
+
+    insights: {
+      badge: "Key Findings",
+
+      title: "Main Opportunities",
+
+      description:
+        "The evaluation revealed recurring usability issues that affected understanding, comparison, and confidence throughout the purchase process.",
+
+      cards: [
+        {
+          number: "01",
+          title: "Reduce Cognitive Load",
+          description:
+            "Breaking information into smaller, more digestible sections would make plans easier to evaluate.",
+        },
+        {
+          number: "02",
+          title: "Improve Comparisons",
+          description:
+            "Users needed clearer ways to compare plans, pricing, and coverage before making a decision.",
+        },
+        {
+          number: "03",
+          title: "Increase Transparency",
+          description:
+            "Important information should be surfaced earlier to reduce uncertainty and build trust.",
+        },
+      ],
+    },
+
+    solution: {
+      badge: "Recommendations",
+
+      title: "Strategic Design Opportunities",
+
+      description:
+        "Rather than redesigning individual screens, I delivered prioritized recommendations focused on simplifying the purchase experience and improving product usability.",
+
+      features: [
+        {
+          eyebrow: "Opportunity 01",
+          title: "Simplify the Purchase Flow",
+          description:
+            "Reduce unnecessary steps and present information progressively so users can focus on one decision at a time.",
+          image: travelSolution1,
+        },
+        {
+          eyebrow: "Opportunity 02",
+          title: "Improve Plan Comparison",
+          description:
+            "Introduce clearer comparison patterns and highlight the differences between plans to support informed decisions.",
+          image: travelSolution2,
+        },
+        {
+          eyebrow: "Opportunity 03",
+          title: "Build User Confidence",
+          description:
+            "Clarify coverage details, pricing, and key information to create a more transparent and trustworthy experience.",
+          image: travelSolution3,
+        },
+      ],
+    },
+
+    results: {
+      badge: "Results & Learnings",
+
+      title: "Outcome",
+
+      description:
+        "The project produced a prioritized set of UX recommendations supported by heuristic analysis and competitive benchmarking. It reinforced the value of combining research, evaluation, and product thinking before moving into visual design.",
+
+      metrics: [
+        {
+          value: "UX",
+          label: "Audit",
+        },
+        {
+          value: "Benchmark",
+          label: "Completed",
+        },
+        {
+          value: "Journey",
+          label: "Reviewed",
+        },
+        {
+          value: "Product",
+          label: "Recommendations",
+        },
+      ],
+
+      learnings: [
+        "Heuristic evaluations are effective for uncovering usability issues before investing in redesigns.",
+        "Competitive benchmarking provides valuable context for prioritizing improvements.",
+        "Clear information architecture is essential when users compare complex products.",
+        "Research-driven recommendations create a stronger foundation for future design decisions.",
+      ],
+    },
+  },
+
   {
     slug: "rh-ai-product",
 
@@ -204,361 +412,199 @@ export const caseStudies = [
   },
 
   {
-    slug: "ecommerce-checkout",
+    slug: "atala-prism",
 
     hero: {
-      badge: "E-commerce • UX/UI",
-      title: "E-commerce Checkout",
+      badge: "Decentralized Identity • Product Design • React",
+      title: "Atala PRISM",
       description:
-        "Improved the checkout experience to reduce friction and increase conversion.",
-
-      image: airforceHero,
-    },
-    overview: {
-      badge: "Overview",
-      title: "Project Overview",
-      description:
-        "I redesigned a complex construction management platform to help teams create projects, monitor progress, manage information, and make operational decisions with greater clarity.",
-
-      details: [
-        {
-          label: "Role",
-          value: "Senior Product Designer",
-        },
-        {
-          label: "Duration",
-          value: "6 months",
-        },
-        {
-          label: "Team",
-          value: "Product, Engineering & Stakeholders",
-        },
-        {
-          label: "Platform",
-          value: "Enterprise SaaS",
-        },
-      ],
-    },
-    challenge: {
-      badge: "The Challenge",
-
-      title: "Understanding the Problem",
-
-      description:
-        "Construction teams struggled with fragmented workflows, difficult navigation, and poor visibility into project progress.",
-
-      cards: [
-        {
-          title: "Fragmented Navigation",
-          description:
-            "Users had to move through multiple disconnected screens to complete common tasks.",
-        },
-        {
-          title: "Information Overload",
-          description:
-            "Critical information competed for attention, making decision-making slower.",
-        },
-        {
-          title: "Steep Learning Curve",
-          description:
-            "New users required significant onboarding before becoming productive.",
-        },
-      ],
-    },
-    research: {
-      badge: "Research",
-      title: "Research & Discovery",
-
-      description:
-        "Through stakeholder interviews, contextual inquiry and workflow analysis, I identified the main pain points affecting productivity and decision making.",
-
-      metrics: [
-        {
-          value: "12",
-          label: "Stakeholder Interviews",
-        },
-        {
-          value: "8",
-          label: "Workshops",
-        },
-        {
-          value: "14",
-          label: "User Flows",
-        },
-        {
-          value: "40hr",
-          label: "Research Time",
-        },
-      ],
-
-      image: airforceResearch,
-    },
-    insights: {
-      badge: "Key Insights",
-
-      title: "What We Learned",
-
-      description:
-        "Research revealed recurring patterns that informed every design decision throughout the project.",
-
-      cards: [
-        {
-          number: "01",
-          title: "Mental Models",
-          description:
-            "Users expected workflows to match the real-world construction process.",
-        },
-        {
-          number: "02",
-          title: "Reduce Cognitive Load",
-          description:
-            "Prioritizing actions over excessive information improved usability.",
-        },
-        {
-          number: "03",
-          title: "Scalable Components",
-          description:
-            "Reusable patterns reduced implementation effort and improved consistency.",
-        },
-      ],
-    },
-    solution: {
-      badge: "The Solution",
-      title: "Designing a Clearer Product Experience",
-      description:
-        "I translated the research findings into focused product improvements that simplified critical workflows and created a more scalable interface.",
-
-      features: [
-        {
-          eyebrow: "Solution 01",
-          title: "Unified Dashboard",
-          description:
-            "A centralized dashboard gives users immediate visibility into project status, priorities, risks, and the actions that require attention.",
-          image: atalaSolution1,
-        },
-        {
-          eyebrow: "Solution 02",
-          title: "Simplified Workflow Builder",
-          description:
-            "A guided workflow reduces cognitive load by breaking complex configuration into clear, predictable steps.",
-          image: atalaSolution2,
-        },
-        {
-          eyebrow: "Solution 03",
-          title: "Contextual Notifications",
-          description:
-            "Notifications were redesigned around urgency, context, and the next action users needed to take.",
-          image: atalaSolution3,
-        },
-      ],
-    },
-    results: {
-      badge: "Results & Learnings",
-
-      title: "Measurable Impact",
-
-      description:
-        "The redesign simplified critical workflows, improved usability, and created a stronger foundation for future product growth.",
-
-      metrics: [
-        {
-          value: "+40%",
-          label: "Faster Task Completion",
-        },
-        {
-          value: "-32%",
-          label: "Reduced User Errors",
-        },
-        {
-          value: "98%",
-          label: "Positive User Feedback",
-        },
-      ],
-
-      learnings: [
-        "Validate assumptions early through continuous user research.",
-        "Design around users' mental models instead of system constraints.",
-        "A scalable design system accelerates product development and consistency.",
-      ],
-    },
-  },
-
-  {
-    slug: "ai-recruitment-platform",
-
-    hero: {
-      badge: "AI Product • SaaS",
-      title: "AI Recruitment Platform",
-      description:
-        "Designed AI-assisted workflows for candidate matching and content generation.",
+        "Designing a connected digital credential ecosystem for issuing, receiving, managing, and verifying credentials across web, mobile, and browser experiences.",
 
       image: atalaHero,
+
+      actions: [
+        {
+          label: "View Live Demo",
+          href: "https://www.youtube.com/watch?v=wemcgPA3IPQ",
+          external: true,
+        },
+      ],
     },
+
     overview: {
       badge: "Overview",
-      title: "Project Overview",
+      title: "A Connected Credential Management Ecosystem",
       description:
-        "I redesigned a complex construction management platform to help teams create projects, monitor progress, manage information, and make operational decisions with greater clarity.",
+        "Atala PRISM was a decentralized identity product created for IOHK. I joined the project through ATIX Labs and designed interfaces across three connected products: a management console for issuing authorities, a mobile wallet for credential holders, and a browser wallet for reviewing and verifying credentials.",
 
       details: [
         {
+          label: "Client",
+          value: "IOHK",
+        },
+        {
+          label: "Company",
+          value: "ATIX Labs",
+        },
+        {
           label: "Role",
-          value: "Senior Product Designer",
+          value: "Product Designer",
         },
         {
-          label: "Duration",
-          value: "6 months",
-        },
-        {
-          label: "Team",
-          value: "Product, Engineering & Stakeholders",
-        },
-        {
-          label: "Platform",
-          value: "Enterprise SaaS",
+          label: "Scope",
+          value: "Web App, Mobile App & Browser Wallet",
         },
       ],
     },
+
     challenge: {
       badge: "The Challenge",
 
-      title: "Understanding the Problem",
+      title: "Making Digital Credentials Easier to Understand",
 
       description:
-        "Construction teams struggled with fragmented workflows, difficult navigation, and poor visibility into project progress.",
+        "The product needed to support the creation, issuance, storage, presentation, and verification of different types of digital credentials. The challenge was to translate decentralized identity and KYC processes into interfaces that felt clear, trustworthy, and consistent.",
 
       cards: [
         {
-          title: "Fragmented Navigation",
+          title: "Complex Identity Flows",
           description:
-            "Users had to move through multiple disconnected screens to complete common tasks.",
+            "I needed to understand credential issuance, verification, decentralized identity, and KYC before translating them into usable product flows.",
         },
         {
-          title: "Information Overload",
+          title: "Three Connected Products",
           description:
-            "Critical information competed for attention, making decision-making slower.",
+            "The management console, mobile wallet, and browser wallet needed to behave as one coherent ecosystem.",
         },
         {
-          title: "Steep Learning Curve",
+          title: "Trust and Security",
           description:
-            "New users required significant onboarding before becoming productive.",
+            "Sensitive identity actions needed to communicate control and clarity without overwhelming users with technical complexity.",
         },
       ],
     },
+
     research: {
-      badge: "Research",
-      title: "Research & Discovery",
+      badge: "Product Understanding",
+
+      title: "Learning the System Through Its Flows",
 
       description:
-        "Through stakeholder interviews, contextual inquiry and workflow analysis, I identified the main pain points affecting productivity and decision making.",
+        "I inherited an existing product rather than participating in the initial research phase. I studied the available flows and collaborated with developers to understand how credentials moved from issuing authorities to credential holders and verification experiences.",
 
       metrics: [
         {
-          value: "12",
-          label: "Stakeholder Interviews",
+          value: "3",
+          label: "Connected Products",
         },
         {
-          value: "8",
-          label: "Workshops",
+          value: "1",
+          label: "Product Designer",
         },
         {
-          value: "14",
-          label: "User Flows",
+          value: "Web",
+          label: "Management Console",
         },
         {
-          value: "40hr",
-          label: "Research Time",
+          value: "Mobile",
+          label: "Credential Wallet",
         },
       ],
 
       image: atalaResearch,
     },
-    insights: {
-      badge: "Key Insights",
 
-      title: "What We Learned",
+    insights: {
+      badge: "Key Design Principles",
+
+      title: "What Guided the Interface",
 
       description:
-        "Research revealed recurring patterns that informed every design decision throughout the project.",
+        "Because the underlying technology was complex, each screen needed to clearly explain the current state, the expected action, and what would happen next.",
 
       cards: [
         {
           number: "01",
-          title: "Mental Models",
+          title: "Explain the Next Action",
           description:
-            "Users expected workflows to match the real-world construction process.",
+            "Flows needed to communicate what was happening, what users needed to do, and the result of each decision.",
         },
         {
           number: "02",
-          title: "Reduce Cognitive Load",
+          title: "Create Cross-Platform Consistency",
           description:
-            "Prioritizing actions over excessive information improved usability.",
+            "Shared visual and interaction patterns connected the console, mobile wallet, and browser wallet.",
         },
         {
           number: "03",
-          title: "Scalable Components",
+          title: "Balance Flexibility and Control",
           description:
-            "Reusable patterns reduced implementation effort and improved consistency.",
+            "Issuing authorities needed to customize credentials without turning the process into an overwhelming configuration experience.",
         },
       ],
     },
+
     solution: {
       badge: "The Solution",
-      title: "Designing a Clearer Product Experience",
+
+      title: "Designing Across the Credential Lifecycle",
+
       description:
-        "I translated the research findings into focused product improvements that simplified critical workflows and created a more scalable interface.",
+        "I designed interfaces for the key moments of the credential lifecycle: creating and issuing credentials, receiving and managing them, and reviewing credential requests through a browser-based wallet.",
 
       features: [
         {
-          eyebrow: "Solution 01",
-          title: "Unified Dashboard",
+          eyebrow: "Management Console",
+          title: "Credential Creation and Customization",
           description:
-            "A centralized dashboard gives users immediate visibility into project status, priorities, risks, and the actions that require attention.",
+            "I designed the web experience used by issuing authorities to create, manage, and personalize different types of digital credentials while keeping the configuration workflow structured and predictable.",
           image: atalaSolution1,
         },
         {
-          eyebrow: "Solution 02",
-          title: "Simplified Workflow Builder",
+          eyebrow: "Mobile Wallet",
+          title: "Receiving and Managing Credentials",
           description:
-            "A guided workflow reduces cognitive load by breaking complex configuration into clear, predictable steps.",
+            "The mobile wallet enabled credential holders, including students, to complete identity-related steps, receive credentials, and manage them from a personal app.",
           image: atalaSolution2,
         },
         {
-          eyebrow: "Solution 03",
-          title: "Contextual Notifications",
+          eyebrow: "Browser Wallet",
+          title: "Reviewing Credential Requests",
           description:
-            "Notifications were redesigned around urgency, context, and the next action users needed to take.",
+            "The browser wallet helped users review credential requests and make informed decisions before approving or rejecting them.",
           image: atalaSolution3,
         },
       ],
     },
+
     results: {
       badge: "Results & Learnings",
 
-      title: "Measurable Impact",
+      title: "From Design to Production",
 
       description:
-        "The redesign simplified critical workflows, improved usability, and created a stronger foundation for future product growth.",
+        "The product was released to production as a connected ecosystem spanning web, mobile, and browser experiences. The project strengthened my ability to work within a technically complex domain and collaborate closely with engineering.",
 
       metrics: [
         {
-          value: "+40%",
-          label: "Faster Task Completion",
+          value: "3",
+          label: "Connected Products",
         },
         {
-          value: "-32%",
-          label: "Reduced User Errors",
+          value: "Live",
+          label: "Released to Production",
         },
         {
-          value: "98%",
-          label: "Positive User Feedback",
+          value: "React",
+          label: "Component Collaboration",
         },
       ],
 
       learnings: [
-        "Validate assumptions early through continuous user research.",
-        "Design around users' mental models instead of system constraints.",
-        "A scalable design system accelerates product development and consistency.",
+        "Understanding the domain is essential before simplifying a complex technical workflow.",
+        "Consistent interaction patterns help users move confidently across connected products.",
+        "Credential customization needs to balance organizational flexibility with a clear and controlled workflow.",
+        "Collaborating directly with developers connected design decisions with reusable React components.",
       ],
     },
   },
