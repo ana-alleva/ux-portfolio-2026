@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { ExperienceItem } from "@/components/ui/ExperienceItem";
+import { ExperienceItem } from "@/components/ui/experienceItem";
 import { experienceData } from "@/data/experience";
 
 export function Experience() {

@@ -20,15 +20,13 @@ export function Contact() {
         </p>
 
         <div className="mt-12 flex w-full flex-col justify-center gap-4 sm:w-auto sm:flex-row">
-          <Button asChild size="lg">
-            <a
-              href={contactData.buttons.linkedin.href}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {contactData.buttons.linkedin.label}
-            </a>
-          </Button>
+          <a
+            href={contactData.buttons.linkedin.href}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button size="lg">{contactData.buttons.linkedin.label}</Button>
+          </a>
           {/* 
           <Button asChild size="lg" variant="outline">
             <a href={contactData.buttons.email.href}>

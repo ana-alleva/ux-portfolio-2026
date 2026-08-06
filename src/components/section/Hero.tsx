@@ -1,22 +1,33 @@
+import profileImage from "@/assets/alleva-ana.png";
+
 import { heroData } from "@/data/hero";
 import { Badge } from "@/components/ui/badge";
 
 export function Hero() {
   return (
-    <section className="flex flex-row justify-center items-center gap-4 md:gap-8 p-8 mt-20">
-      <div>
-        <p className="text-xs md:text-sm text-center uppercase tracking-[0.3em] text-primary">
+    <section className="mt-20 px-8 py-8">
+      <div className="mx-auto flex max-w-6xl flex-col items-center text-center">
+        <img
+          src={profileImage}
+          alt="Ana Clara Alleva"
+          draggable={false}
+          onContextMenu={(event) => event.preventDefault()}
+          className="mb-8 h-24 w-24 rounded-full border border-white/10 object-cover shadow-2xl md:h-36 md:w-36"
+        />
+
+        <p className="text-xs uppercase tracking-[0.3em] text-primary md:text-sm">
           {heroData.badge}
         </p>
-        <div className="flex flex-col items-center justify-center gap-4">
-          <h1 className="md:mt-6 mt-2 text-center mb-0 max-w-4xl text-3xl md:text-6xl font-bold leading-none lg:text-8xl text-white">
-            {heroData.title}
-          </h1>
-          <p className="max-w-xl text-center text-xs md:text-lg text-primary">
-            {heroData.description}
-          </p>
-        </div>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
+
+        <h1 className="mt-4 max-w-5xl text-4xl font-bold leading-none text-white md:mt-6 md:text-7xl lg:text-8xl">
+          {heroData.title}
+        </h1>
+
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary md:text-xl">
+          {heroData.description}
+        </p>
+
+        <div className="mt-10 flex flex-wrap justify-center gap-3">
           {heroData.badges.map((badge) => (
             <Badge key={badge} variant="outline">
               {badge}
