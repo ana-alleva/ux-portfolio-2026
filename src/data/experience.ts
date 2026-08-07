@@ -16,7 +16,7 @@ export const experienceData = {
     },
 
     {
-      years: "Jun 2024—Present",
+      years: "2023–2024",
       role: "Senior UX/UI Designer · Contract",
       company: "Sunshift Dev",
       description:
