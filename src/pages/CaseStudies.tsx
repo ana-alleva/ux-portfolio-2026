@@ -1,17 +1,21 @@
 import { Link, Navigate, useParams } from "react-router";
 import { ArrowLeft, ExternalLink } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
-import { Navbar } from "@/components/layout/Navbar";
 import { Badge } from "@/components/ui/badge";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+
 import { caseStudies } from "@/data/caseStudies";
+
 import { CaseStudyOverview } from "@/components/caseStudy/CaseStudyOverview";
 import { CaseStudyChallenge } from "@/components/caseStudy/CaseStudyChallenge";
 import { CaseStudyResearch } from "@/components/caseStudy/CaseStudyResearch";
 import { CaseStudyInsights } from "@/components/caseStudy/CaseStudyInsights";
 import { CaseStudySolution } from "@/components/caseStudy/CaseStudySolution";
-import { Footer } from "@/components/layout/Footer";
 import { CaseStudyResults } from "@/components/caseStudy/CaseStudyResults";
 import { CaseStudyNavigation } from "@/components/caseStudy/CaseStudyNavigation";
+import { OutcomeLearnings } from "@/components/ui/OutcomeLearnings";
 
 export function CaseStudy() {
   const { slug } = useParams();
@@ -23,14 +27,14 @@ export function CaseStudy() {
   }
 
   return (
-    <main className="min-h-screen bg-background">
+    <main id="top" className="min-h-screen bg-background">
       <Navbar />
 
-      <section className="mx-auto max-w-7xl pb-20 md:pt-32 px-8">
-        <div className="flex flex-col gap-4 mt-16 md:mt-4">
+      <section className="mx-auto max-w-7xl px-8 pb-20 pt-24 md:pt-32">
+        <div className="mt-4 flex flex-col items-start gap-4 md:mt-0">
           <Link
-            to="/"
-            className="inline-flex items-center gap-2 text-primary transition hover:text-pink-500"
+            to="/#featuredProjects"
+            className="inline-flex items-center gap-2 text-primary transition-colors hover:text-pink-500"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Portfolio
@@ -54,12 +58,13 @@ export function CaseStudy() {
                 key={action.label}
                 href={action.href}
                 target={action.external ? "_blank" : undefined}
-                rel={action.external ? "noreferrer" : undefined}
+                rel={action.external ? "noopener noreferrer" : undefined}
                 className="inline-flex"
               >
                 <Button variant="outline">
                   {action.label}
-                  <ExternalLink className="ml-2 h-4 w-4" />
+
+                  {action.external && <ExternalLink className="ml-2 h-4 w-4" />}
                 </Button>
               </a>
             ))}
@@ -71,20 +76,23 @@ export function CaseStudy() {
           alt={caseStudy.hero.title}
           draggable={false}
           onContextMenu={(event) => event.preventDefault()}
-          className="mt-8 md:mt-20 h-auto w-full rounded-xl md:rounded-3xl object-contain md:object-cover"
+          className="mt-8 h-auto w-full rounded-xl object-contain md:mt-20 md:rounded-3xl"
         />
+
         <CaseStudyOverview
           badge={caseStudy.overview.badge}
           title={caseStudy.overview.title}
           description={caseStudy.overview.description}
           details={caseStudy.overview.details}
         />
+
         <CaseStudyChallenge
           badge={caseStudy.challenge.badge}
           title={caseStudy.challenge.title}
           description={caseStudy.challenge.description}
           cards={caseStudy.challenge.cards}
         />
+
         <CaseStudyResearch
           badge={caseStudy.research.badge}
           title={caseStudy.research.title}
@@ -92,18 +100,21 @@ export function CaseStudy() {
           metrics={caseStudy.research.metrics}
           image={caseStudy.research.image}
         />
+
         <CaseStudyInsights
           badge={caseStudy.insights.badge}
           title={caseStudy.insights.title}
           description={caseStudy.insights.description}
           cards={caseStudy.insights.cards}
         />
+
         <CaseStudySolution
           badge={caseStudy.solution.badge}
           title={caseStudy.solution.title}
           description={caseStudy.solution.description}
           features={caseStudy.solution.features}
         />
+
         <CaseStudyResults
           badge={caseStudy.results.badge}
           title={caseStudy.results.title}
@@ -111,8 +122,18 @@ export function CaseStudy() {
           metrics={caseStudy.results.metrics}
           learnings={caseStudy.results.learnings}
         />
+
+        {caseStudy.outcome && (
+          <OutcomeLearnings
+            outcome={caseStudy.outcome.outcome}
+            learnings={caseStudy.outcome.learnings}
+            nextStep={caseStudy.outcome.nextStep}
+          />
+        )}
+
         <CaseStudyNavigation />
       </section>
+
       <Footer />
     </main>
   );

@@ -217,6 +217,16 @@ export const caseStudies = [
         "Research-driven recommendations create a stronger foundation for future design decisions.",
       ],
     },
+    outcome: {
+      outcome:
+        "The audit resulted in a prioritized set of UX recommendations focused on reducing friction across quote, plan comparison, and purchase journeys.",
+
+      learnings:
+        "The research showed that purchase confidence depends not only on simplifying individual screens, but also on making critical information easier to compare and understand throughout the journey.",
+
+      nextStep:
+        "The next step would be validating the proposed improvements through usability testing and measuring their impact on completion, abandonment, and purchase confidence.",
+    },
   },
 
   {
@@ -408,6 +418,16 @@ export const caseStudies = [
         "Chat history, files, CVs, and generated content needed to behave as one coherent system.",
         "Working directly with React improved collaboration between design and development.",
       ],
+    },
+    outcome: {
+      outcome:
+        "The project delivered a complete AI workspace concept covering workspace creation, conversational candidate management, authentication, and supporting product flows.",
+
+      learnings:
+        "Designing AI-first experiences requires making context, system status, and user control visible so complex interactions feel predictable and trustworthy.",
+
+      nextStep:
+        "The next step would be testing the workspace and multi-chat model with recruiters to validate navigation, context switching, and AI response clarity.",
     },
   },
 
@@ -606,6 +626,16 @@ export const caseStudies = [
         "Credential customization needs to balance organizational flexibility with a clear and controlled workflow.",
         "Collaborating directly with developers connected design decisions with reusable React components.",
       ],
+    },
+    outcome: {
+      outcome:
+        "The product reached production as a connected ecosystem spanning a management console, mobile wallet, and browser wallet for issuing, managing, and verifying digital credentials.",
+
+      learnings:
+        "Complex identity systems become easier to use when every step clearly communicates the current state, the required action, and the consequence of each decision.",
+
+      nextStep:
+        "The next step would be evaluating cross-platform consistency and validating how credential holders understand approval, rejection, and verification flows.",
     },
   },
 ];
