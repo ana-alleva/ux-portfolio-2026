@@ -4,31 +4,47 @@ export const experienceData = {
   title: "Experience",
 
   description:
-    "Contributing to cross-functional global teams in SaaS, Enterprise and AI environments.",
+    "Designing complex digital products across enterprise SaaS, AI, and global product teams.",
 
   jobs: [
     {
-      years: "2025—Present",
-      role: "Senior Product Designer",
+      years: "Dec 2025—Present",
+      role: "Senior Lead Product Designer",
       company: "Nortal",
       description:
-        "Designing enterprise platforms through UX research, workflow design, scalable UI systems, and continuous collaboration with engineering.",
+        "Leading UX discovery and product design for complex enterprise platforms, from user research and workflow analysis to scalable product experiences and design systems.",
     },
 
     {
-      years: "2023—2025",
-      role: "Senior UX/UI Designer",
+      years: "Jun 2024—Present",
+      role: "Senior UX/UI Designer · Contract",
+      company: "Sunshift Dev",
+      description:
+        "Designing a B2B SaaS platform for managing employee cards across Apple Wallet and Google Wallet, including automation, notification, and communication workflows.",
+    },
+
+    {
+      years: "Jul 2025—Dec 2025",
+      role: "UX UI Designer",
+      company: "AMA · Alberta Motor Association",
+      description:
+        "Conducted UX audits and competitive research for travel insurance experiences, identifying friction across quote, comparison, and purchase journeys.",
+    },
+
+    {
+      years: "Oct 2023—Dec 2025",
+      role: "Sr. UX UI Designer",
       company: "Nearsure",
       description:
-        "Designed digital products for international clients, creating scalable experiences and design systems for enterprise products.",
+        "Collaborated with cross-functional teams on digital product experiences for international clients in a remote product environment.",
     },
 
     {
-      years: "2023—2024",
-      role: "UX/UI Designer",
+      years: "Mar 2023—Jun 2024",
+      role: "Full Stack UX UI Designer",
       company: "Renaiss AI",
       description:
-        "Designed AI-powered recruitment products, improving search workflows and complex operational interfaces.",
+        "Designed end-to-end experiences for an AI-powered recruitment platform, including candidate matching, content generation, workspace management, and scalable AI interaction patterns.",
     },
   ],
 };
