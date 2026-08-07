@@ -63,7 +63,7 @@ export function Navbar() {
               <a href="/#contact">
                 <Button
                   variant="outline"
-                  className="rounded-lg border-white/20 px-5 hover:border-pink-500 hover:bg-pink-500 hover:text-white"
+                  className="rounded-lg border-white px-5 hover:border-pink-500 hover:bg-pink-500 hover:text-white"
                 >
                   {navData.button}
                 </Button>
@@ -119,7 +119,7 @@ export function Navbar() {
                 <a href="/#contact" onClick={closeMenu}>
                   <Button
                     variant="outline"
-                    className="w-full rounded-lg border-white/20 hover:border-pink-500 hover:bg-pink-500 hover:text-black"
+                    className="w-full rounded-lg border-white hover:border-pink-500 hover:bg-pink-500 hover:text-black"
                   >
                     {navData.button}
                   </Button>

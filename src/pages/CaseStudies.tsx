@@ -15,7 +15,6 @@ import { CaseStudyInsights } from "@/components/caseStudy/CaseStudyInsights";
 import { CaseStudySolution } from "@/components/caseStudy/CaseStudySolution";
 import { CaseStudyResults } from "@/components/caseStudy/CaseStudyResults";
 import { CaseStudyNavigation } from "@/components/caseStudy/CaseStudyNavigation";
-import { OutcomeLearnings } from "@/components/ui/OutcomeLearnings";
 
 export function CaseStudy() {
   const { slug } = useParams();
@@ -61,7 +60,10 @@ export function CaseStudy() {
                 rel={action.external ? "noopener noreferrer" : undefined}
                 className="inline-flex"
               >
-                <Button variant="outline">
+                <Button
+                  variant="outline"
+                  className="hover:bg-pink-500 hover:border-pink-500"
+                >
                   {action.label}
 
                   {action.external && <ExternalLink className="ml-2 h-4 w-4" />}
@@ -122,14 +124,6 @@ export function CaseStudy() {
           metrics={caseStudy.results.metrics}
           learnings={caseStudy.results.learnings}
         />
-
-        {caseStudy.outcome && (
-          <OutcomeLearnings
-            outcome={caseStudy.outcome.outcome}
-            learnings={caseStudy.outcome.learnings}
-            nextStep={caseStudy.outcome.nextStep}
-          />
-        )}
 
         <CaseStudyNavigation />
       </section>

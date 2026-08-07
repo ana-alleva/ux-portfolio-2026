@@ -18,7 +18,7 @@ export function CaseStudyNavigation() {
       : undefined;
 
   return (
-    <div className="mx-auto mt-24 flex max-w-7xl items-center justify-between border-t border-white/10 pt-10">
+    <div className="mx-auto mt-24 flex max-w-7xl items-center justify-between border-t border-white/10 pt-2 md:pt-10">
       <div className="flex flex-1">
         {previous ? (
           <Link

@@ -17,6 +17,10 @@ h3 {
   font-family: var(--font-serif);
 }
 
+a:hover {
+  color: oklch(65.6% 0.241 354.308);
+}
+
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: "Inter", sans-serif;

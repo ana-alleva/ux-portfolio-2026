@@ -22,7 +22,7 @@ export function CaseStudyResults({
   learnings,
 }: CaseStudyResultsProps) {
   return (
-    <section className="py-24">
+    <section className="py-8 md:py-24">
       <Badge variant="outline">{badge}</Badge>
 
       <h2 className="mt-6 max-w-4xl text-4xl leading-none text-white md:text-6xl">

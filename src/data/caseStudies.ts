@@ -24,7 +24,7 @@ export const caseStudies = [
       badge: "UX Research • Product Strategy • Audit",
       title: "Travel Insurance UX Audit",
       description:
-        "Conducted a heuristic evaluation and competitive benchmark to identify usability issues and recommend improvements for the travel insurance purchase experience.",
+        "I reviewed the travel insurance journey to understand where people could get confused, hesitate, or abandon the purchase.",
 
       image: travelHero,
 
@@ -41,7 +41,7 @@ export const caseStudies = [
       badge: "Overview",
       title: "Evaluating the Insurance Purchase Experience",
       description:
-        "This project focused on evaluating the end-to-end experience of purchasing travel insurance. Through heuristic analysis, competitive benchmarking, and flow reviews, I identified usability issues and proposed improvements to simplify decision making and increase user confidence.",
+        "Buying travel insurance asks people to compare unfamiliar plans, prices, and exclusions—often while preparing for a trip. I audited the journey to find where the product made that decision harder than it needed to be.",
 
       details: [
         {
@@ -69,7 +69,7 @@ export const caseStudies = [
       title: "Helping Users Choose the Right Insurance Plan",
 
       description:
-        "Purchasing travel insurance involves comparing coverage, understanding complex information, and making decisions under uncertainty. The goal was to identify friction throughout the purchase journey and recommend opportunities to improve usability and clarity.",
+        "Users were being asked to make a high-stakes decision with unfamiliar terminology and few clear signals about which plan suited them. I looked for the points where the interface added uncertainty instead of reducing it.",
 
       cards: [
         {
@@ -96,7 +96,7 @@ export const caseStudies = [
       title: "Research & Evaluation",
 
       description:
-        "I evaluated the existing experience using UX heuristics, analyzed the complete purchase journey, and compared the product against competing travel insurance platforms to identify strengths, weaknesses, and opportunities for improvement.",
+        "I walked through the purchase flow step by step, documented usability issues, and compared how other insurance products explained plans, prices, and coverage. The goal was not to copy competitors, but to understand where user expectations had already been established.",
 
       metrics: [
         {
@@ -156,7 +156,7 @@ export const caseStudies = [
       title: "Strategic Design Opportunities",
 
       description:
-        "Rather than redesigning individual screens, I delivered prioritized recommendations focused on simplifying the purchase experience and improving product usability.",
+        "I did not jump straight into redesigning screens. I first organized the findings by severity and user impact, then proposed changes to the flow, plan comparison, and information hierarchy.",
 
       features: [
         {
@@ -184,12 +184,12 @@ export const caseStudies = [
     },
 
     results: {
-      badge: "Results & Learnings",
+      badge: "Outcome & Learnings",
 
-      title: "Outcome",
+      title: "Knowing What to Fix Before Redesigning",
 
       description:
-        "The project produced a prioritized set of UX recommendations supported by heuristic analysis and competitive benchmarking. It reinforced the value of combining research, evaluation, and product thinking before moving into visual design.",
+        "The audit gave the team a shared view of the most important usability problems and a prioritized direction for improving the purchase journey before investing in visual redesign.",
 
       metrics: [
         {
@@ -211,21 +211,10 @@ export const caseStudies = [
       ],
 
       learnings: [
-        "Heuristic evaluations are effective for uncovering usability issues before investing in redesigns.",
-        "Competitive benchmarking provides valuable context for prioritizing improvements.",
-        "Clear information architecture is essential when users compare complex products.",
-        "Research-driven recommendations create a stronger foundation for future design decisions.",
+        "Users need help understanding differences between plans, not simply more information.",
+        "Important exclusions and coverage details should appear before users commit to a plan.",
+        "A UX audit can reduce the risk of redesigning the wrong part of a journey.",
       ],
-    },
-    outcome: {
-      outcome:
-        "The audit resulted in a prioritized set of UX recommendations focused on reducing friction across quote, plan comparison, and purchase journeys.",
-
-      learnings:
-        "The research showed that purchase confidence depends not only on simplifying individual screens, but also on making critical information easier to compare and understand throughout the journey.",
-
-      nextStep:
-        "The next step would be validating the proposed improvements through usability testing and measuring their impact on completion, abandonment, and purchase confidence.",
     },
   },
 
@@ -236,7 +225,7 @@ export const caseStudies = [
       badge: "AI Product • Discovery • Recruitment",
       title: "Airforce AI Workspace",
       description:
-        "Designing an AI-powered workspace that helps recruiters organize candidates, manage documents, and retrieve information through a conversational interface.",
+        "I designed a recruiting workspace where conversations, CVs, files, and AI-generated information stayed connected instead of living across separate tools.",
 
       image: airforceHero,
 
@@ -253,12 +242,12 @@ export const caseStudies = [
       badge: "Overview",
       title: "Designing a Conversational Recruiting Workspace",
       description:
-        "Airforce was an internal AI product developed at Aluxion during the discovery phase. The goal was to rethink how recruiters access candidate information by combining AI conversations, document management, and multiple workspaces into a single product experience.",
+        "Airforce was an internal product explored during discovery. Recruiters could create separate workspaces for different hiring processes, upload CVs and files, and use chat to retrieve or generate information without losing the context of each search.",
 
       details: [
         {
           label: "Company",
-          value: "Aluxion",
+          value: "Renaiss AI",
         },
         {
           label: "Role",
@@ -279,7 +268,7 @@ export const caseStudies = [
       badge: "The Challenge",
       title: "Helping Recruiters Navigate Complex Information",
       description:
-        "Recruiters often move between candidates, CVs, documents, conversations, and hiring processes. The challenge was to create a conversational experience that gave users fast access to information while keeping multiple workspaces and chat histories organized.",
+        "A recruiter might be reviewing several roles and dozens of candidates at the same time. The hard part was not simply adding a chat—it was making sure each conversation remembered the right files, candidates, and history.",
 
       cards: [
         {
@@ -418,16 +407,6 @@ export const caseStudies = [
         "Chat history, files, CVs, and generated content needed to behave as one coherent system.",
         "Working directly with React improved collaboration between design and development.",
       ],
-    },
-    outcome: {
-      outcome:
-        "The project delivered a complete AI workspace concept covering workspace creation, conversational candidate management, authentication, and supporting product flows.",
-
-      learnings:
-        "Designing AI-first experiences requires making context, system status, and user control visible so complex interactions feel predictable and trustworthy.",
-
-      nextStep:
-        "The next step would be testing the workspace and multi-chat model with recruiters to validate navigation, context switching, and AI response clarity.",
     },
   },
 
@@ -626,16 +605,6 @@ export const caseStudies = [
         "Credential customization needs to balance organizational flexibility with a clear and controlled workflow.",
         "Collaborating directly with developers connected design decisions with reusable React components.",
       ],
-    },
-    outcome: {
-      outcome:
-        "The product reached production as a connected ecosystem spanning a management console, mobile wallet, and browser wallet for issuing, managing, and verifying digital credentials.",
-
-      learnings:
-        "Complex identity systems become easier to use when every step clearly communicates the current state, the required action, and the consequence of each decision.",
-
-      nextStep:
-        "The next step would be evaluating cross-platform consistency and validating how credential holders understand approval, rejection, and verification flows.",
     },
   },
 ];
