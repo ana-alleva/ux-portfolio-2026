@@ -7,8 +7,8 @@ export function Footer() {
           <h3 className="text-lg font-semibold text-white">Ana Clara Alleva</h3>
 
           <p className="mt-2 max-w-md text-sm leading-relaxed text-primary">
-            Senior Product Designer specialized in AI-powered and Enterprise
-            SaaS products. Available for remote opportunities.
+            Lead UX UI Designer specialized in AI-powered and Enterprise SaaS
+            products. Available for remote opportunities.
           </p>
 
           <p className="mt-4 text-xs text-primary">

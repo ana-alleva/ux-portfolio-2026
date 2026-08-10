@@ -1,6 +1,6 @@
 export const heroData = {
-  badge: "Product Designer",
-  title: "Senior Product Designer for SaaS & AI",
+  badge: "Lead UX UI Designer",
+  title: "AI, Research & Product Design",
   description:
     "I design intuitive digital experiences by combining UX research, product strategy, interaction design, and scalable design systems.",
   buttonPrimary: "View Selected Work",
