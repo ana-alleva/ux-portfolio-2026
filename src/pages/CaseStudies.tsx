@@ -1,13 +1,10 @@
-import { Link, Navigate, useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { ArrowLeft, ExternalLink } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-
+import { Navbar } from "@/components/layout/Navbar";
 import { caseStudies } from "@/data/caseStudies";
-
 import { CaseStudyOverview } from "@/components/caseStudy/CaseStudyOverview";
 import { CaseStudyChallenge } from "@/components/caseStudy/CaseStudyChallenge";
 import { CaseStudyResearch } from "@/components/caseStudy/CaseStudyResearch";
@@ -15,6 +12,7 @@ import { CaseStudyInsights } from "@/components/caseStudy/CaseStudyInsights";
 import { CaseStudySolution } from "@/components/caseStudy/CaseStudySolution";
 import { CaseStudyResults } from "@/components/caseStudy/CaseStudyResults";
 import { CaseStudyNavigation } from "@/components/caseStudy/CaseStudyNavigation";
+import { AmaTravelCaseStudy } from "@/components/caseStudy/AmaTravelCaseStudy";
 
 export function CaseStudy() {
   const { slug } = useParams();
@@ -22,11 +20,34 @@ export function CaseStudy() {
   const caseStudy = caseStudies.find((project) => project.slug === slug);
 
   if (!caseStudy) {
-    return <Navigate to="/" replace />;
+    return null;
+  }
+
+  if (caseStudy.slug === "travel-insurance-audit") {
+    return (
+      <main>
+        <Navbar />
+
+        <AmaTravelCaseStudy />
+
+        <Footer />
+      </main>
+    );
+  }
+
+  if (
+    !caseStudy.overview ||
+    !caseStudy.challenge ||
+    !caseStudy.research ||
+    !caseStudy.insights ||
+    !caseStudy.solution ||
+    !caseStudy.results
+  ) {
+    return null;
   }
 
   return (
-    <main id="top" className="min-h-screen bg-background">
+    <main>
       <Navbar />
 
       <section className="mx-auto max-w-7xl px-8 pb-20 pt-24 md:pt-32">
@@ -62,7 +83,7 @@ export function CaseStudy() {
               >
                 <Button
                   variant="outline"
-                  className="hover:bg-pink-500 hover:border-pink-500"
+                  className="hover:border-pink-500 hover:bg-pink-500"
                 >
                   {action.label}
 

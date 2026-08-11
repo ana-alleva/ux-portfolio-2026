@@ -37,5 +37,14 @@ export const featuredProjectsData = {
       tags: ["Identity", "Product Design", "React"],
       image: atalaHero,
     },
+    {
+      id: "04",
+      slug: "cxd",
+      title: "CXD",
+      description:
+        "Designed a decentralized identity ecosystem spanning a management console, mobile wallet, and browser extension for issuing, managing, and verifying digital credentials.",
+      tags: ["Identity", "Product Design", "React"],
+      image: atalaHero,
+    },
   ],
 };

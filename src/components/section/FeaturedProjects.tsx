@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
-
 import { Badge } from "@/components/ui/badge";
 import { featuredProjectsData } from "@/data/featureProjects";
 
@@ -33,15 +32,9 @@ export function FeaturedProjects() {
               {/* Text */}
               <div className="space-y-6">
                 <p className="text-sm font-medium text-primary">{project.id}</p>
-
                 <h3 className="text-3xl font-bold text-white md:text-5xl">
                   {project.title}
                 </h3>
-
-                <p className="max-w-xl text-base text-primary">
-                  {project.description}
-                </p>
-
                 <div className="flex flex-wrap gap-3">
                   {project.tags.map((tag) => (
                     <Badge key={tag} variant="outline">
@@ -49,7 +42,9 @@ export function FeaturedProjects() {
                     </Badge>
                   ))}
                 </div>
-
+                <p className="max-w-xl text-base text-primary">
+                  {project.description}
+                </p>
                 <Link
                   to={`/projects/${project.slug}`}
                   className="inline-flex items-center gap-3 text-base text-white transition-colors duration-300 hover:text-pink-500"

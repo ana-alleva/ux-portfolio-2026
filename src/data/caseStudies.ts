@@ -22,27 +22,11 @@ export const caseStudies = [
 
     hero: {
       badge: "UX Research • Product Strategy • Audit",
-      title: "Travel Insurance UX Audit",
+      title: "Making Travel Insurance Easier to Understand and Compare",
       description:
         "I reviewed the travel insurance journey to understand where people could get confused, hesitate, or abandon the purchase.",
 
       image: travelHero,
-
-      actions: [
-        {
-          label: "View Live Experience",
-          href: "https://www.amatravel.ca/",
-          external: true,
-        },
-      ],
-    },
-
-    overview: {
-      badge: "Overview",
-      title: "Evaluating the Insurance Purchase Experience",
-      description:
-        "Buying travel insurance asks people to compare unfamiliar plans, prices, and exclusions—often while preparing for a trip. I audited the journey to find where the product made that decision harder than it needed to be.",
-
       details: [
         {
           label: "Role",
@@ -61,159 +45,217 @@ export const caseStudies = [
           value: "Responsive Web",
         },
       ],
-    },
 
-    challenge: {
-      badge: "The Challenge",
-
-      title: "Helping Users Choose the Right Insurance Plan",
-
-      description:
-        "Users were being asked to make a high-stakes decision with unfamiliar terminology and few clear signals about which plan suited them. I looked for the points where the interface added uncertainty instead of reducing it.",
-
-      cards: [
+      actions: [
         {
-          title: "Complex Information",
-          description:
-            "Coverage details, exclusions, and pricing were difficult to compare, increasing users' cognitive load.",
-        },
-        {
-          title: "Decision Confidence",
-          description:
-            "Users lacked enough guidance to understand which insurance plan best matched their needs.",
-        },
-        {
-          title: "Purchase Friction",
-          description:
-            "Several interaction patterns introduced unnecessary steps and interrupted the buying flow.",
+          label: "View Live Experience",
+          href: "https://www.amatravel.ca/",
+          external: true,
         },
       ],
     },
 
-    research: {
-      badge: "Methodology",
-
-      title: "Research & Evaluation",
-
+    context: {
+      badge: "The challenge",
+      title: "A cross-product with a difficult decision journey",
       description:
-        "I walked through the purchase flow step by step, documented usability issues, and compared how other insurance products explained plans, prices, and coverage. The goal was not to copy competitors, but to understand where user expectations had already been established.",
+        "Travel insurance is a high-consideration product. People need to understand coverage, exclusions, and pricing while making decisions under uncertainty. The existing journey made those decisions harder by spreading information across multiple steps and presenting plans in ways that were difficult to compare.",
 
-      metrics: [
-        {
-          value: "UX",
-          label: "Heuristic Audit",
-        },
-        {
-          value: "Flow",
-          label: "Journey Analysis",
-        },
-        {
-          value: "Benchmark",
-          label: "Competitor Review",
-        },
-        {
-          value: "Strategy",
-          label: "Recommendations",
-        },
-      ],
+      opportunity: {
+        title: "The opportunity",
+        description:
+          "Reduce uncertainty by simplifying the journey, improving plan comparison, and helping users understand what matters before committing to a purchase.",
+      },
 
       image: travelResearch,
     },
 
-    insights: {
-      badge: "Key Findings",
+    role: {
+      title: "My Role",
+      items: [
+        "Evaluated the end-to-end travel insurance experience, benchmarked AMA against leading competitors, identified recurring UX patterns and friction points, and translated those findings into design recommendations and interface concepts.",
+        "UX heuristic evaluation",
+        "Competitive benchmarking & flow analysis",
+        "Information architecture, interaction and UI recommendations, redesign concepts",
+      ],
+    },
 
-      title: "Main Opportunities",
+    learnings: {
+      title: "What I learned before designing",
 
-      description:
-        "The evaluation revealed recurring usability issues that affected understanding, comparison, and confidence throughout the purchase process.",
+      tags: [
+        "Navigation",
+        "Language",
+        "Visual Design",
+        "Cognitive Load",
+        "Trust & Confidence",
+      ],
 
       cards: [
         {
           number: "01",
-          title: "Reduce Cognitive Load",
+          label: "Speed",
+          title: "Too much effort before value",
           description:
-            "Breaking information into smaller, more digestible sections would make plans easier to evaluate.",
+            "AMA required seven steps before reaching a quote, while the benchmarked competitors surfaced pricing through much shorter entry flows.",
         },
         {
           number: "02",
-          title: "Improve Comparisons",
+          label: "Comparison",
+          title: "Users had to assemble the answer themselves",
           description:
-            "Users needed clearer ways to compare plans, pricing, and coverage before making a decision.",
+            "Plan categories were separated across tabs, making differences harder to compare at a glance and increasing the amount of information users had to remember.",
         },
         {
           number: "03",
-          title: "Increase Transparency",
+          label: "Clarity",
+          title: "The problem wasn’t simply the amount of information",
           description:
-            "Important information should be surfaced earlier to reduce uncertainty and build trust.",
+            "AMA used a similar number of inputs to some competitors, but unclear grouping and validation made the experience feel more demanding.",
         },
       ],
     },
+    designDecisions: [
+      {
+        number: "01",
+        title: "Move from a seven-step journey toward a faster path to value",
 
-    solution: {
-      badge: "Recommendations",
+        problem:
+          "The benchmark showed that speed wasn’t only about page performance. AMA loaded quickly, but users still had to complete seven steps before seeing their options.",
 
-      title: "Strategic Design Opportunities",
+        decision:
+          "I explored consolidating the fragmented quote journey into a shorter, more continuous interaction so users could reach meaningful options with less navigation overhead.",
 
-      description:
-        "I did not jump straight into redesigning screens. I first organized the findings by severity and user impact, then proposed changes to the flow, plan comparison, and information hierarchy.",
+        why: "Ask for what is necessary, preserve context, and surface useful plan information earlier.",
 
-      features: [
-        {
-          eyebrow: "Opportunity 01",
-          title: "Simplify the Purchase Flow",
+        image: travelSolution1,
+
+        imageLabel: "Redesigned Quote Experience",
+
+        takeaway: {
+          label: "Why this matters",
           description:
-            "Reduce unnecessary steps and present information progressively so users can focus on one decision at a time.",
+            "Reducing unnecessary transitions lowers interaction cost and gets users to the information they came for sooner.",
+        },
+      },
+      {
+        number: "02",
+        title: "Turn plan selection into a comparison task",
+
+        problem:
+          "The audit showed that users make important decisions directly from plan cards, but AMA’s existing structure made differences difficult to evaluate without switching views.",
+
+        decision:
+          "I redesigned plan options around a consistent card structure, exposing price, key coverage, relevant differences, and primary actions in a predictable hierarchy.",
+
+        why: "Keep equivalent information in equivalent positions.",
+
+        image: travelSolution2,
+
+        imageLabel: "Three-plan Quote Results",
+
+        takeaway: {
+          label: "Borrowing the right pattern",
+          description:
+            "The benchmark showed that consistent columns, aligned benefits, and visible decision cues make complex insurance products significantly easier to scan.",
+        },
+      },
+      {
+        number: "03",
+        title: "Design for confidence, not just information density",
+
+        problem:
+          "Insurance flows ask users to make high-stakes decisions with unfamiliar terminology. Adding more information does not necessarily make those decisions easier.",
+
+        decision:
+          "I reorganized supporting information around the moments when users need it, using clearer grouping, progressive disclosure, and stronger visual hierarchy.",
+
+        why: "Make the next action obvious and reduce uncertainty at each step.",
+
+        image: travelSolution3,
+
+        imageLabel: "Improved Travel Insurance Experience",
+
+        takeaway: {
+          label: "Design principle",
+          description:
+            "The goal was not to remove important information, but to present it in a way that helps users understand what matters without overwhelming them.",
+        },
+      },
+    ],
+    solutionOverview: {
+      title: "The solution",
+      description:
+        "A clearer path from exploration to confident selection. The resulting direction connects three parts of the experience that previously required too much interpretation: finding the right insurance product, understanding what it offers, and choosing between plans.",
+
+      items: [
+        {
+          number: "01",
+          title: "Earlier access to relevant plans",
+          description:
+            "A more direct insurance entry experience brings trip details and plan discovery closer together, reducing unnecessary steps before users can evaluate their options.",
           image: travelSolution1,
         },
         {
-          eyebrow: "Opportunity 02",
-          title: "Improve Plan Comparison",
+          number: "02",
+          title: "Plans designed to be compared",
           description:
-            "Introduce clearer comparison patterns and highlight the differences between plans to support informed decisions.",
+            "Consistent cards align price, coverage, benefits, and actions so users can scan horizontally instead of reconstructing differences from separate views.",
           image: travelSolution2,
         },
         {
-          eyebrow: "Opportunity 03",
-          title: "Build User Confidence",
+          number: "03",
+          title: "Coverage explained in context",
           description:
-            "Clarify coverage details, pricing, and key information to create a more transparent and trustworthy experience.",
+            "Product information is reorganized around the questions users need answered: what is covered, why it matters, and which option fits their trip.",
           image: travelSolution3,
         },
       ],
     },
-
-    results: {
-      badge: "Outcome & Learnings",
-
-      title: "Knowing What to Fix Before Redesigning",
+    evaluation: {
+      title: "How I evaluated the solution",
 
       description:
-        "The audit gave the team a shared view of the most important usability problems and a prioritized direction for improving the purchase journey before investing in visual redesign.",
+        "Because this work was an audit and design exploration rather than a launched product experiment, I evaluated the direction against the same criteria used in the benchmark rather than claiming post-launch impact.",
+
+      criteria: [
+        "Clarity and visibility",
+        "Ease of comparison and cognitive load",
+        "Efficiency, error prevention, and decision support",
+      ],
+    },
+    outcomes: {
+      title: "What changed in the proposed experience",
 
       metrics: [
         {
-          value: "UX",
-          label: "Audit",
+          value: "7 → 4",
+          label: "Proposed quote-flow steps",
         },
         {
-          value: "Benchmark",
-          label: "Completed",
+          value: "Earlier",
+          label: "Price visibility",
         },
         {
-          value: "Journey",
-          label: "Reviewed",
+          value: "Side-by-side",
+          label: "Plan comparison",
         },
         {
-          value: "Product",
-          label: "Recommendations",
+          value: "Clearer",
+          label: "Decision guidance",
         },
       ],
 
-      learnings: [
-        "Users need help understanding differences between plans, not simply more information.",
-        "Important exclusions and coverage details should appear before users commit to a plan.",
-        "A UX audit can reduce the risk of redesigning the wrong part of a journey.",
+      description:
+        "The redesign direction addresses the major opportunities identified in the audit: shorten the path to a quote, surface price earlier, standardize plan comparison, strengthen visual decision cues, improve navigation, and reduce unnecessary cognitive load.",
+    },
+    validation: {
+      title: "What I’d validate next",
+
+      paragraphs: [
+        "The next step would be usability testing the redesigned quote and comparison flow with travelers, focusing on whether people can reach a relevant plan faster, explain the differences between options, recover from input errors, and choose coverage with greater confidence.",
+
+        "Complex products don't always need less information. They need better decisions. This project reinforced that reducing cognitive load isn't simply about removing content. In high-consideration products like insurance, hierarchy, comparison, timing, and context determine whether information feels useful or overwhelming.",
       ],
     },
   },
@@ -416,6 +458,203 @@ export const caseStudies = [
     hero: {
       badge: "Decentralized Identity • Product Design • React",
       title: "Atala PRISM",
+      description:
+        "Designing a connected digital credential ecosystem for issuing, receiving, managing, and verifying credentials across web, mobile, and browser experiences.",
+
+      image: atalaHero,
+
+      actions: [
+        {
+          label: "View Live Demo",
+          href: "https://www.youtube.com/watch?v=wemcgPA3IPQ",
+          external: true,
+        },
+      ],
+    },
+
+    overview: {
+      badge: "Overview",
+      title: "A Connected Credential Management Ecosystem",
+      description:
+        "Atala PRISM was a decentralized identity product created for IOHK. I joined the project through ATIX Labs and designed interfaces across three connected products: a management console for issuing authorities, a mobile wallet for credential holders, and a browser wallet for reviewing and verifying credentials.",
+
+      details: [
+        {
+          label: "Client",
+          value: "IOHK",
+        },
+        {
+          label: "Company",
+          value: "ATIX Labs",
+        },
+        {
+          label: "Role",
+          value: "Product Designer",
+        },
+        {
+          label: "Scope",
+          value: "Web App, Mobile App & Browser Wallet",
+        },
+      ],
+    },
+
+    challenge: {
+      badge: "The Challenge",
+
+      title: "Making Digital Credentials Easier to Understand",
+
+      description:
+        "The product needed to support the creation, issuance, storage, presentation, and verification of different types of digital credentials. The challenge was to translate decentralized identity and KYC processes into interfaces that felt clear, trustworthy, and consistent.",
+
+      cards: [
+        {
+          title: "Complex Identity Flows",
+          description:
+            "I needed to understand credential issuance, verification, decentralized identity, and KYC before translating them into usable product flows.",
+        },
+        {
+          title: "Three Connected Products",
+          description:
+            "The management console, mobile wallet, and browser wallet needed to behave as one coherent ecosystem.",
+        },
+        {
+          title: "Trust and Security",
+          description:
+            "Sensitive identity actions needed to communicate control and clarity without overwhelming users with technical complexity.",
+        },
+      ],
+    },
+
+    research: {
+      badge: "Product Understanding",
+
+      title: "Learning the System Through Its Flows",
+
+      description:
+        "I inherited an existing product rather than participating in the initial research phase. I studied the available flows and collaborated with developers to understand how credentials moved from issuing authorities to credential holders and verification experiences.",
+
+      metrics: [
+        {
+          value: "3",
+          label: "Connected Products",
+        },
+        {
+          value: "1",
+          label: "Product Designer",
+        },
+        {
+          value: "Web",
+          label: "Management Console",
+        },
+        {
+          value: "Mobile",
+          label: "Credential Wallet",
+        },
+      ],
+
+      image: atalaResearch,
+    },
+
+    insights: {
+      badge: "Key Design Principles",
+
+      title: "What Guided the Interface",
+
+      description:
+        "Because the underlying technology was complex, each screen needed to clearly explain the current state, the expected action, and what would happen next.",
+
+      cards: [
+        {
+          number: "01",
+          title: "Explain the Next Action",
+          description:
+            "Flows needed to communicate what was happening, what users needed to do, and the result of each decision.",
+        },
+        {
+          number: "02",
+          title: "Create Cross-Platform Consistency",
+          description:
+            "Shared visual and interaction patterns connected the console, mobile wallet, and browser wallet.",
+        },
+        {
+          number: "03",
+          title: "Balance Flexibility and Control",
+          description:
+            "Issuing authorities needed to customize credentials without turning the process into an overwhelming configuration experience.",
+        },
+      ],
+    },
+
+    solution: {
+      badge: "The Solution",
+
+      title: "Designing Across the Credential Lifecycle",
+
+      description:
+        "I designed interfaces for the key moments of the credential lifecycle: creating and issuing credentials, receiving and managing them, and reviewing credential requests through a browser-based wallet.",
+
+      features: [
+        {
+          eyebrow: "Management Console",
+          title: "Credential Creation and Customization",
+          description:
+            "I designed the web experience used by issuing authorities to create, manage, and personalize different types of digital credentials while keeping the configuration workflow structured and predictable.",
+          image: atalaSolution1,
+        },
+        {
+          eyebrow: "Mobile Wallet",
+          title: "Receiving and Managing Credentials",
+          description:
+            "The mobile wallet enabled credential holders, including students, to complete identity-related steps, receive credentials, and manage them from a personal app.",
+          image: atalaSolution2,
+        },
+        {
+          eyebrow: "Browser Wallet",
+          title: "Reviewing Credential Requests",
+          description:
+            "The browser wallet helped users review credential requests and make informed decisions before approving or rejecting them.",
+          image: atalaSolution3,
+        },
+      ],
+    },
+
+    results: {
+      badge: "Results & Learnings",
+
+      title: "From Design to Production",
+
+      description:
+        "The product was released to production as a connected ecosystem spanning web, mobile, and browser experiences. The project strengthened my ability to work within a technically complex domain and collaborate closely with engineering.",
+
+      metrics: [
+        {
+          value: "3",
+          label: "Connected Products",
+        },
+        {
+          value: "Live",
+          label: "Released to Production",
+        },
+        {
+          value: "React",
+          label: "Component Collaboration",
+        },
+      ],
+
+      learnings: [
+        "Understanding the domain is essential before simplifying a complex technical workflow.",
+        "Consistent interaction patterns help users move confidently across connected products.",
+        "Credential customization needs to balance organizational flexibility with a clear and controlled workflow.",
+        "Collaborating directly with developers connected design decisions with reusable React components.",
+      ],
+    },
+  },
+  {
+    slug: "cxd",
+
+    hero: {
+      badge: "Decentralized Identity • Product Design • React",
+      title: "CXD",
       description:
         "Designing a connected digital credential ecosystem for issuing, receiving, managing, and verifying credentials across web, mobile, and browser experiences.",
 
