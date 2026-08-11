@@ -4,20 +4,20 @@ export const cards = {
   title: "How I Work",
 
   description:
-    "A systematic, strategic design process to unlock user needs and business opportunities.",
+    "From understanding the problem to designing and helping ship the solution.",
 
   projects: [
     {
       id: "01",
       title: "Discover",
       description:
-        "Understanding users, business goals, and technical constraints.",
+        "Understanding the problem through users, business context, and product constraints.",
 
       listItems: [
         "User interviews",
-        "Research & data analysis",
+        "UX audits & research",
         "Usability testing",
-        "Competitive landscape analysis",
+        "Competitive analysis",
       ],
     },
 
@@ -25,13 +25,13 @@ export const cards = {
       id: "02",
       title: "Define",
       description:
-        "Transforming insights into strategic product opportunities.",
+        "Turning findings and requirements into clear product decisions and scalable flows.",
 
       listItems: [
-        "User journeys",
-        "Information architecture",
         "User flows",
-        "Product strategy",
+        "Information architecture",
+        "Interaction patterns",
+        "Product decisions",
       ],
     },
 
@@ -39,13 +39,13 @@ export const cards = {
       id: "03",
       title: "Design & Deliver",
       description:
-        "Creating scalable experiences together with cross-functional teams.",
+        "Taking solutions from polished UI to reusable components, working closely with engineering.",
 
       listItems: [
-        "Wireframes",
-        "Interactive prototypes",
         "High-fidelity UI",
-        "Design Systems",
+        "Design systems",
+        "Interactive prototypes",
+        "React components",
       ],
     },
   ],

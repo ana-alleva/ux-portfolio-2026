@@ -3,7 +3,7 @@ export const footerData = {
 
   links: [
     {
-      label: "Senior UX UI Designer Portfolio",
+      label: "Senior UX/UI Designer Portfolio",
       href: "#",
     },
     {

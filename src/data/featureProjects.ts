@@ -25,8 +25,8 @@ export const featuredProjectsData = {
       slug: "rh-ai-product",
       title: "Airforce AI Workspace",
       description:
-        "An AI-powered recruiting workspace designed to help users manage candidates, documents, conversations, and multiple hiring processes.",
-      tags: ["AI Product", "Visual Design", "React"],
+        "Designed the UX flows and visual system for an AI recruiting workspace, helping teams manage candidate documents and processes, and partnered with engineers on React components.",
+      tags: ["AI Product Design", "Visual Design", "React"],
       image: airforceHero,
     },
     {
@@ -34,7 +34,7 @@ export const featuredProjectsData = {
       slug: "atala-prism",
       title: "Atala PRISM",
       description:
-        "Designed a decentralized identity ecosystem spanning a management console, mobile wallet, and browser extension for issuing, managing, and verifying digital credentials.",
+        "Turned research insights into UX flows and polished UI for a digital identity platform, while contributing to its React implementation.",
       tags: ["Identity", "Product Design", "React"],
       image: atalaHero,
     },
@@ -43,7 +43,7 @@ export const featuredProjectsData = {
       slug: "cxd",
       title: "CXD",
       description:
-        "Designed a decentralized identity ecosystem spanning a management console, mobile wallet, and browser extension for issuing, managing, and verifying digital credentials.",
+        "Designed UX flows and polished UI for a B2B SaaS platform managing digital employee cards across Apple and Google Wallet, partnering with engineers on React components.",
       tags: ["Identity", "Product Design", "React"],
       image: cxdHero,
     },

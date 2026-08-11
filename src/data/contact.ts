@@ -2,7 +2,7 @@ export const contactData = {
   badge: "Open to Work",
   title: "Let's work together.",
   description:
-    "I'm currently open to remote UX UI Designer opportunities on global international teams.",
+    "I'm currently open to remote UX/UI Designer opportunities on global international teams.",
 
   buttons: {
     linkedin: {

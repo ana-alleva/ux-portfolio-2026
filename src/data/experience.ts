@@ -9,42 +9,34 @@ export const experienceData = {
   jobs: [
     {
       years: "Dec 2025—Present",
-      role: "Senior Lead UX UI Designer",
+      role: "Senior Lead UX/UI Designer",
       company: "Nortal",
       description:
-        "Leading UX discovery and product design for complex enterprise platforms, from user research and workflow analysis to scalable product experiences and design systems.",
-    },
-
-    {
-      years: "2023–2024",
-      role: "Senior UX/UI Designer · Contract",
-      company: "Sunshift Dev",
-      description:
-        "Designing a B2B SaaS platform for managing employee cards across Apple Wallet and Google Wallet, including automation, notification, and communication workflows.",
+        "Lead UX discovery and product design for complex platforms, from research and workflow analysis to scalable experiences and design systems",
     },
 
     {
       years: "Jul 2025—Dec 2025",
-      role: "UX UI Designer",
+      role: "UX/UI Designer",
       company: "AMA · Alberta Motor Association",
       description:
         "Conducted UX audits and competitive research for travel insurance experiences, identifying friction across quote, comparison, and purchase journeys.",
     },
 
     {
-      years: "Oct 2023—Dec 2025",
-      role: "Sr. UX UI Designer",
-      company: "Nearsure",
+      years: "Mar 2023—Jun 2024",
+      role: "Full Stack UX/UI Designer",
+      company: "Renaiss AI",
       description:
-        "Collaborated with cross-functional teams on digital product experiences for international clients in a remote product environment.",
+        "Designed end-to-end experiences for an AI recruiting platform, covering matching, content workflows, and collaborative spaces.",
     },
 
     {
-      years: "Mar 2023—Jun 2024",
-      role: "Full Stack UX UI Designer",
-      company: "Renaiss AI",
+      years: "2023–2024",
+      role: "Senior UX/UI Designer · Freelance",
+      company: "Sunshift Dev",
       description:
-        "Designed end-to-end experiences for an AI-powered recruitment platform, including candidate matching, content generation, workspace management, and scalable AI interaction patterns.",
+        "Designing a B2B SaaS platform for managing employee cards across Apple Wallet and Google Wallet, including automation, notification, and communication workflows.",
     },
   ],
 };

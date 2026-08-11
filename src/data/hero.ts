@@ -1,15 +1,14 @@
 export const heroData = {
-  badge: "Lead UX UI Designer",
+  badge: "Lead UX/UI Designer",
   title: "From Discovery to Delivery",
   description:
-    "I design intuitive digital experiences by combining UX research, product strategy, interaction design, and scalable design systems.",
+    "I design digital products end to end. From UX flows to polished UI, building scalable design systems and partnering with engineers on React components.",
   buttonPrimary: "View Selected Work",
   buttonSecondary: "Contact Me",
   badges: [
-    "8+ Years Experience",
-    "AI Native",
-    "UX Research",
     "Product Design",
-    "Frontend",
+    "UX Research",
+    "React Components",
+    "8+ Years Experience",
   ],
 };

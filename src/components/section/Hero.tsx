@@ -38,7 +38,7 @@ export function Hero() {
         {/* Worked with */}
         <div className="mt-16 flex w-full flex-col items-center border-y border-white/10 py-10">
           <p className="mb-8 text-xs uppercase tracking-[0.3em] text-primary">
-            Trusted by teams at
+            Selected work includes projects with
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 text-lg font-semibold tracking-wide text-white/70 md:text-xl">

@@ -270,7 +270,7 @@ export const caseStudies = [
     slug: "rh-ai-product",
 
     hero: {
-      badge: "AI Product • Visual Design • Recruitment",
+      badge: "AI Product Design • Visual Design • Recruitment",
       title: "Airforce AI Workspace",
       description:
         "I designed a recruiting workspace where conversations, CVs, files, and AI-generated information stayed connected instead of living across separate tools.",
@@ -453,7 +453,7 @@ export const caseStudies = [
         "AI interactions need to feel predictable, understandable, and connected to a clear product structure.",
         "The workspace model helped users organize several recruiting processes without losing context.",
         "Chat history, files, CVs, and generated content needed to behave as one coherent system.",
-        "Working directly with React improved collaboration between design and development.",
+        "Collaborating directly with developers connected design decisions with reusable React components",
       ],
     },
   },
@@ -692,7 +692,7 @@ export const caseStudies = [
         },
         {
           label: "Role",
-          value: "UX UI Designer",
+          value: "UX/UI Designer",
         },
         {
           label: "Scope",
@@ -849,6 +849,7 @@ export const caseStudies = [
         "Reusable interaction patterns are especially important when a platform supports many different types of content and delivery.",
         "Flexible business rules need strong hierarchy and progressive disclosure to keep configuration manageable.",
         "Working closely with Product Owners and developers helped translate business requirements into reusable interface patterns.",
+        "Collaborating directly with developers connected design decisions with reusable React components",
       ],
     },
   },
