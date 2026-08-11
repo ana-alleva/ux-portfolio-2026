@@ -61,7 +61,7 @@ export function FeaturedProjects() {
                   alt={project.title}
                   draggable={false}
                   onContextMenu={(e) => e.preventDefault()}
-                  className="pointer-events-none h-[300px] w-full select-none rounded-3xl object-cover md:h-auto"
+                  className="pointer-events-none h-[300px] w-full select-none rounded-3xl object-cover md:h-auto border-1 border-zinc-800"
                 />
               </div>
             </article>

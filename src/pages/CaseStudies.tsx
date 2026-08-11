@@ -99,7 +99,7 @@ export function CaseStudy() {
           alt={caseStudy.hero.title}
           draggable={false}
           onContextMenu={(event) => event.preventDefault()}
-          className="mt-8 h-auto w-full rounded-xl object-contain md:mt-20 md:rounded-3xl"
+          className="mt-8 h-auto w-full rounded-xl object-contain md:mt-20 md:rounded-3xl border-1 border-zinc-800"
         />
 
         <CaseStudyOverview

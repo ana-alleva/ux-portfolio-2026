@@ -47,7 +47,7 @@ export function CaseStudyResearch({
         alt={title}
         draggable={false}
         onContextMenu={(e) => e.preventDefault()}
-        className="mt-16 block h-auto max-h-none w-full max-w-full rounded-2xl object-contain md:rounded-3xl"
+        className="mt-16 block h-auto max-h-none w-full max-w-full rounded-2xl object-contain md:rounded-3xl border-1 border-zinc-800"
       />
     </section>
   );

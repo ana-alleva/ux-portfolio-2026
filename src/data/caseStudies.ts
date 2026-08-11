@@ -4,11 +4,17 @@ import atalaSolution1 from "@/assets/atala/solution-1.png";
 import atalaSolution2 from "@/assets/atala/solution-2.png";
 import atalaSolution3 from "@/assets/atala/solution-3.png";
 
-import airforceHero from "@/assets/airforce/hero.png";
-import airforceResearch from "@/assets/airforce/research.png";
-import airforceSolution1 from "@/assets/airforce/solution-1.png";
-import airforceSolution2 from "@/assets/airforce/solution-2.png";
-import airforceSolution3 from "@/assets/airforce/solution-3.png";
+import aiforceHero from "@/assets/aiforce/hero.png";
+import aiforceResearch from "@/assets/aiforce/research.png";
+import aiforceSolution1 from "@/assets/aiforce/solution-1.png";
+import aiforceSolution2 from "@/assets/aiforce/solution-2.png";
+import aiforceSolution3 from "@/assets/aiforce/solution-3.png";
+
+import cxdHero from "@/assets/cxd/hero.png";
+import cxdResearch from "@/assets/cxd/research.png";
+import cxdSolution1 from "@/assets/cxd/solution-1.png";
+import cxdSolution2 from "@/assets/cxd/solution-2.png";
+import cxdSolution3 from "@/assets/cxd/solution-3.png";
 
 import travelHero from "@/assets/travel/travelCaseHero.png";
 import travelChallenge from "@/assets/travel/travelChallenge.png";
@@ -21,20 +27,20 @@ export const caseStudies = [
     slug: "travel-insurance-audit",
 
     hero: {
-      badge: "UX Research • Product Strategy • Audit",
+      badge: "UX Research • Audit",
       title: "Making Travel Insurance Easier to Understand and Compare",
       description:
-        "I reviewed the travel insurance journey to understand where people could get confused, hesitate, or abandon the purchase.",
+        "I reviewed the travel insurance journey to understand where people get confused, hesitate, or abandon the purchase.",
 
       image: travelHero,
       details: [
         {
           label: "Role",
-          value: "UX Researcher & Product Designer",
+          value: "UX Researcher & Product Design Proposal",
         },
         {
           label: "Scope",
-          value: "UX Audit",
+          value: "UX audit, Competitive Benchmark and redesign proposal",
         },
         {
           label: "Methods",
@@ -48,7 +54,7 @@ export const caseStudies = [
 
       actions: [
         {
-          label: "View Live Experience",
+          label: "View current AMA site",
           href: "https://www.amatravel.ca/",
           external: true,
         },
@@ -264,12 +270,12 @@ export const caseStudies = [
     slug: "rh-ai-product",
 
     hero: {
-      badge: "AI Product • Discovery • Recruitment",
+      badge: "AI Product • Visual Design • Recruitment",
       title: "Airforce AI Workspace",
       description:
         "I designed a recruiting workspace where conversations, CVs, files, and AI-generated information stayed connected instead of living across separate tools.",
 
-      image: airforceHero,
+      image: aiforceHero,
 
       actions: [
         {
@@ -332,10 +338,10 @@ export const caseStudies = [
     },
 
     research: {
-      badge: "Collaboration",
-      title: "From Research to Interface",
+      badge: "From Research to Design",
+      title: "Translating Research Into Interface Decisions",
       description:
-        "I worked within a three-person design team and collaborated closely with the UX Researcher. My role was to translate research findings into interaction flows and polished interfaces, while iterating with developers throughout the discovery process.",
+        "I worked within a three-person design team alongside a UX Researcher. My role was to translate research findings and product requirements into interaction flows and polished interfaces, iterating with the team throughout the discovery process.",
 
       metrics: [
         {
@@ -356,14 +362,14 @@ export const caseStudies = [
         },
       ],
 
-      image: airforceResearch,
+      image: aiforceResearch,
     },
 
     insights: {
-      badge: "Key Insights",
-      title: "Design Principles",
+      badge: "Design Principles",
+      title: "Translating Insights Into the Interface",
       description:
-        "The product became more understandable when workspaces, conversations, files, and histories were treated as parts of one connected system rather than separate features.",
+        "Research findings and product requirements helped define how workspaces, conversations, files, and histories should come together as one connected system.",
 
       cards: [
         {
@@ -382,7 +388,7 @@ export const caseStudies = [
           number: "03",
           title: "Reduce Context Switching",
           description:
-            "Keeping conversations, CVs, files, and generated content together reduced unnecessary navigation between tools.",
+            "Keeping conversations, CVs, files, and generated content together minimized the need to move between different parts of the experience.",
         },
       ],
     },
@@ -399,21 +405,21 @@ export const caseStudies = [
           title: "Organizing Recruiting Projects",
           description:
             "I designed the flows for creating, organizing, and switching between workspaces, helping recruiters manage several hiring processes without losing context.",
-          image: airforceSolution1,
+          image: aiforceSolution1,
         },
         {
           eyebrow: "AI Conversation",
           title: "Accessing Candidate Information Through Chat",
           description:
             "The chat interface allowed recruiters to upload CVs and files, ask questions, extract information, generate content, and access statistics without leaving the conversation.",
-          image: airforceSolution2,
+          image: aiforceSolution2,
         },
         {
           eyebrow: "Supporting Flows",
           title: "Authentication, Accounts, and Payments",
           description:
             "I also designed supporting flows including login, workspace management, and payment-related screens to create a complete end-to-end experience.",
-          image: airforceSolution3,
+          image: aiforceSolution3,
         },
       ],
     },
@@ -526,12 +532,12 @@ export const caseStudies = [
     },
 
     research: {
-      badge: "Product Understanding",
+      badge: "From Research to Design",
 
-      title: "Learning the System Through Its Flows",
+      title: "Translating Research Into Product Flows",
 
       description:
-        "I inherited an existing product rather than participating in the initial research phase. I studied the available flows and collaborated with developers to understand how credentials moved from issuing authorities to credential holders and verification experiences.",
+        "I joined the project after the initial research phase. Working from the research and product requirements already defined by the team, I translated those findings into user flows and interfaces across the management console, mobile wallet, and browser wallet.",
 
       metrics: [
         {
@@ -653,12 +659,12 @@ export const caseStudies = [
     slug: "cxd",
 
     hero: {
-      badge: "Decentralized Identity • Product Design • React",
-      title: "CXD",
+      badge: "UI Design • Enterprise Platform",
+      title: "ConnectXD",
       description:
-        "Designing a connected digital credential ecosystem for issuing, receiving, managing, and verifying credentials across web, mobile, and browser experiences.",
+        "Designing an enterprise platform for creating and delivering personalized employee benefits across messages, forms, email, and digital wallet experiences.",
 
-      image: atalaHero,
+      image: cxdHero,
 
       actions: [
         {
@@ -671,26 +677,26 @@ export const caseStudies = [
 
     overview: {
       badge: "Overview",
-      title: "A Connected Credential Management Ecosystem",
+      title: "A Platform for Personalized Employee Benefits",
       description:
-        "Atala PRISM was a decentralized identity product created for IOHK. I joined the project through ATIX Labs and designed interfaces across three connected products: a management console for issuing authorities, a mobile wallet for credential holders, and a browser wallet for reviewing and verifying credentials.",
+        "CXD enabled organizations to manage accounts and members, create benefit experiences, and deliver them through different channels. Working from Product Owner requirements, I designed the interfaces that brought these workflows together into a clear and consistent enterprise experience.",
 
       details: [
         {
-          label: "Client",
-          value: "IOHK",
+          label: "Product",
+          value: "CXD",
         },
         {
           label: "Company",
-          value: "ATIX Labs",
+          value: "ConnectXD",
         },
         {
           label: "Role",
-          value: "Product Designer",
+          value: "UX UI Designer",
         },
         {
           label: "Scope",
-          value: "Web App, Mobile App & Browser Wallet",
+          value: "Enterprise Web Platform",
         },
       ],
     },
@@ -698,26 +704,26 @@ export const caseStudies = [
     challenge: {
       badge: "The Challenge",
 
-      title: "Making Digital Credentials Easier to Understand",
+      title: "Making Complex Benefit Workflows Manageable",
 
       description:
-        "The product needed to support the creation, issuance, storage, presentation, and verification of different types of digital credentials. The challenge was to translate decentralized identity and KYC processes into interfaces that felt clear, trustworthy, and consistent.",
+        "The platform needed to support multiple organizations, members, communication channels, benefit cards, and delivery conditions within the same system. My challenge was to translate Product Owner requirements into interfaces that made these interconnected workflows easier to configure and manage.",
 
       cards: [
         {
-          title: "Complex Identity Flows",
+          title: "Multiple Configuration Layers",
           description:
-            "I needed to understand credential issuance, verification, decentralized identity, and KYC before translating them into usable product flows.",
+            "Organizations needed to manage accounts, members, content, benefits, and delivery settings without losing context as they moved through the platform.",
         },
         {
-          title: "Three Connected Products",
+          title: "Multiple Communication Channels",
           description:
-            "The management console, mobile wallet, and browser wallet needed to behave as one coherent ecosystem.",
+            "The experience needed to support different types of communication, including text messages, email, forms, alerts, and digital wallet cards.",
         },
         {
-          title: "Trust and Security",
+          title: "Conditional Delivery",
           description:
-            "Sensitive identity actions needed to communicate control and clarity without overwhelming users with technical complexity.",
+            "Benefits and communications could be triggered by different conditions, including timing and location, requiring flexible configuration without making the interface feel overly complex.",
         },
       ],
     },
@@ -725,15 +731,15 @@ export const caseStudies = [
     research: {
       badge: "Product Understanding",
 
-      title: "Learning the System Through Its Flows",
+      title: "Translating Requirements Into Product Flows",
 
       description:
-        "I inherited an existing product rather than participating in the initial research phase. I studied the available flows and collaborated with developers to understand how credentials moved from issuing authorities to credential holders and verification experiences.",
+        "This was not a research-led project. I worked from Product Owner requirements and the existing product logic to understand how organizations, members, messages, triggers, and benefits connected. From there, I translated those requirements into structured interface flows and reusable interaction patterns.",
 
       metrics: [
         {
-          value: "3",
-          label: "Connected Products",
+          value: "B2B",
+          label: "Enterprise Platform",
         },
         {
           value: "1",
@@ -741,15 +747,15 @@ export const caseStudies = [
         },
         {
           value: "Web",
-          label: "Management Console",
+          label: "Management Platform",
         },
         {
-          value: "Mobile",
-          label: "Credential Wallet",
+          value: "Multi-channel",
+          label: "Benefit Delivery",
         },
       ],
 
-      image: atalaResearch,
+      image: cxdResearch,
     },
 
     insights: {
@@ -758,26 +764,26 @@ export const caseStudies = [
       title: "What Guided the Interface",
 
       description:
-        "Because the underlying technology was complex, each screen needed to clearly explain the current state, the expected action, and what would happen next.",
+        "The interface needed to give administrators flexibility while keeping complex configuration tasks structured, understandable, and predictable.",
 
       cards: [
         {
           number: "01",
-          title: "Explain the Next Action",
+          title: "Make Complex Flows Sequential",
           description:
-            "Flows needed to communicate what was happening, what users needed to do, and the result of each decision.",
+            "Multi-step tasks were broken into clear stages so administrators could understand where they were, what they were configuring, and what came next.",
         },
         {
           number: "02",
-          title: "Create Cross-Platform Consistency",
+          title: "Keep Configuration Consistent",
           description:
-            "Shared visual and interaction patterns connected the console, mobile wallet, and browser wallet.",
+            "Shared patterns across members, messaging, benefits, and delivery settings reduced the amount of new interaction logic users needed to learn.",
         },
         {
           number: "03",
           title: "Balance Flexibility and Control",
           description:
-            "Issuing authorities needed to customize credentials without turning the process into an overwhelming configuration experience.",
+            "The interface needed to support different channels, audiences, and delivery conditions without turning every workflow into an overwhelming configuration screen.",
         },
       ],
     },
@@ -785,32 +791,32 @@ export const caseStudies = [
     solution: {
       badge: "The Solution",
 
-      title: "Designing Across the Credential Lifecycle",
+      title: "Designing the Benefit Delivery Workflow",
 
       description:
-        "I designed interfaces for the key moments of the credential lifecycle: creating and issuing credentials, receiving and managing them, and reviewing credential requests through a browser-based wallet.",
+        "I designed the core interfaces administrators used to configure benefit experiences, from creating the content and selecting an audience to defining how and when it should be delivered.",
 
       features: [
         {
-          eyebrow: "Management Console",
-          title: "Credential Creation and Customization",
+          eyebrow: "Benefit Configuration",
+          title: "Creating Digital Benefit Experiences",
           description:
-            "I designed the web experience used by issuing authorities to create, manage, and personalize different types of digital credentials while keeping the configuration workflow structured and predictable.",
-          image: atalaSolution1,
+            "I designed structured workflows for configuring benefit content and digital cards, helping administrators move through complex setup tasks without losing context.",
+          image: cxdSolution1,
         },
         {
-          eyebrow: "Mobile Wallet",
-          title: "Receiving and Managing Credentials",
+          eyebrow: "Messaging & Personalization",
+          title: "Creating Personalized Communications",
           description:
-            "The mobile wallet enabled credential holders, including students, to complete identity-related steps, receive credentials, and manage them from a personal app.",
-          image: atalaSolution2,
+            "Administrators could create and customize communications for specific audiences using channels such as text messages, email, and forms while previewing the experience before delivery.",
+          image: cxdSolution2,
         },
         {
-          eyebrow: "Browser Wallet",
-          title: "Reviewing Credential Requests",
+          eyebrow: "Delivery & Automation",
+          title: "Controlling When Benefits Reach Members",
           description:
-            "The browser wallet helped users review credential requests and make informed decisions before approving or rejecting them.",
-          image: atalaSolution3,
+            "I designed interfaces for selecting audiences and configuring delivery conditions, supporting scheduled and contextual experiences such as time- or location-based communications.",
+          image: cxdSolution3,
         },
       ],
     },
@@ -818,19 +824,19 @@ export const caseStudies = [
     results: {
       badge: "Results & Learnings",
 
-      title: "From Design to Production",
+      title: "From Requirements to a Scalable Interface",
 
       description:
-        "The product was released to production as a connected ecosystem spanning web, mobile, and browser experiences. The project strengthened my ability to work within a technically complex domain and collaborate closely with engineering.",
+        "The project strengthened my ability to translate complex Product Owner requirements into structured enterprise interfaces and to design reusable patterns across interconnected workflows.",
 
       metrics: [
         {
-          value: "3",
-          label: "Connected Products",
+          value: "B2B",
+          label: "Enterprise Experience",
         },
         {
-          value: "Live",
-          label: "Released to Production",
+          value: "Multi-channel",
+          label: "Benefit Communication",
         },
         {
           value: "React",
@@ -839,10 +845,10 @@ export const caseStudies = [
       ],
 
       learnings: [
-        "Understanding the domain is essential before simplifying a complex technical workflow.",
-        "Consistent interaction patterns help users move confidently across connected products.",
-        "Credential customization needs to balance organizational flexibility with a clear and controlled workflow.",
-        "Collaborating directly with developers connected design decisions with reusable React components.",
+        "Complex enterprise workflows become easier to manage when configuration is divided into clear, predictable stages.",
+        "Reusable interaction patterns are especially important when a platform supports many different types of content and delivery.",
+        "Flexible business rules need strong hierarchy and progressive disclosure to keep configuration manageable.",
+        "Working closely with Product Owners and developers helped translate business requirements into reusable interface patterns.",
       ],
     },
   },

@@ -1,6 +1,7 @@
-import airforceHero from "@/assets/airforce/hero.png";
+import airforceHero from "@/assets/aiforce/hero.png";
 import atalaHero from "@/assets/atala/hero.png";
 import travelHero from "@/assets/travel/hero.png";
+import cxdHero from "@/assets/cxd/hero.png";
 
 export const featuredProjectsData = {
   badge: "Selected Work",
@@ -44,7 +45,7 @@ export const featuredProjectsData = {
       description:
         "Designed a decentralized identity ecosystem spanning a management console, mobile wallet, and browser extension for issuing, managing, and verifying digital credentials.",
       tags: ["Identity", "Product Design", "React"],
-      image: atalaHero,
+      image: cxdHero,
     },
   ],
 };
