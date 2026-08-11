@@ -4,7 +4,7 @@ import { skillsData } from "@/data/skills";
 
 export function Skills() {
   return (
-    <section id="skills" className="px-4 md:py-24 py-8">
+    <section id="skills" className="px-4 py-8">
       <div className="mx-auto max-w-7xl">
         <Badge variant="outline">{skillsData.badge}</Badge>
 

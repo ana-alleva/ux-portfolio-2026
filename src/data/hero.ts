@@ -6,7 +6,7 @@ export const heroData = {
   buttonPrimary: "View Selected Work",
   buttonSecondary: "Contact Me",
   badges: [
-    "10+ Years Experience",
+    "8+ Years Experience",
     "AI Native",
     "UX Research",
     "Product Design",

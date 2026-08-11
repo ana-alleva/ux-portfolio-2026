@@ -44,6 +44,7 @@ export function Hero() {
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 text-lg font-semibold tracking-wide text-white/70 md:text-xl">
             <span>Nortal</span>
             <span>IOHK</span>
+            <span>ConnectXD</span>
             <span>Aluxion</span>
             <span>Atix Labs</span>
           </div>
