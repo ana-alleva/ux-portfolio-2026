@@ -10,8 +10,8 @@ import airforceSolution1 from "@/assets/airforce/solution-1.png";
 import airforceSolution2 from "@/assets/airforce/solution-2.png";
 import airforceSolution3 from "@/assets/airforce/solution-3.png";
 
-import travelHero from "@/assets/travel/hero.png";
-import travelResearch from "@/assets/travel/research.png";
+import travelHero from "@/assets/travel/travelCaseHero.png";
+import travelChallenge from "@/assets/travel/travelChallenge.png";
 import travelSolution1 from "@/assets/travel/solution-1.png";
 import travelSolution2 from "@/assets/travel/solution-2.png";
 import travelSolution3 from "@/assets/travel/solution-3.png";
@@ -67,7 +67,7 @@ export const caseStudies = [
           "Reduce uncertainty by simplifying the journey, improving plan comparison, and helping users understand what matters before committing to a purchase.",
       },
 
-      image: travelResearch,
+      image: travelChallenge,
     },
 
     role: {
@@ -162,15 +162,15 @@ export const caseStudies = [
       },
       {
         number: "03",
-        title: "Design for confidence, not just information density",
+        title: "Build trust at the moment of purchase",
 
         problem:
-          "Insurance flows ask users to make high-stakes decisions with unfamiliar terminology. Adding more information does not necessarily make those decisions easier.",
+          "The purchase experience asked users to commit without providing enough reassurance around payment security, pricing transparency, and purchase protection.",
 
         decision:
-          "I reorganized supporting information around the moments when users need it, using clearer grouping, progressive disclosure, and stronger visual hierarchy.",
+          "I benchmarked high-consideration checkout experiences to identify trust patterns that could strengthen the insurance purchase flow.",
 
-        why: "Make the next action obvious and reduce uncertainty at each step.",
+        why: "At the point of payment, reducing perceived risk is as important as explaining the product clearly.",
 
         image: travelSolution3,
 
@@ -179,7 +179,7 @@ export const caseStudies = [
         takeaway: {
           label: "Design principle",
           description:
-            "The goal was not to remove important information, but to present it in a way that helps users understand what matters without overwhelming them.",
+            "The goal was to reduce uncertainty at the moment of purchase by making security, pricing, and protection cues more visible and easier to understand.",
         },
       },
     ],

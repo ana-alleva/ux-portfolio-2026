@@ -15,7 +15,7 @@ export const featuredProjectsData = {
       slug: "travel-insurance-audit",
       title: "Travel Insurance UX Audit",
       description:
-        "A UX audit and competitive benchmark focused on improving quote speed, plan comparison, clarity, and purchase confidence.",
+        "A UX audit and competitive benchmark that turned usability findings into a clearer, faster insurance purchase experience.",
       tags: ["UX Research", "Heuristic Audit", "Benchmark"],
       image: travelHero,
     },

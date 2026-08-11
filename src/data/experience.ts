@@ -9,7 +9,7 @@ export const experienceData = {
   jobs: [
     {
       years: "Dec 2025—Present",
-      role: "Senior Lead Product Designer",
+      role: "Senior Lead UX UI Designer",
       company: "Nortal",
       description:
         "Leading UX discovery and product design for complex enterprise platforms, from user research and workflow analysis to scalable product experiences and design systems.",
