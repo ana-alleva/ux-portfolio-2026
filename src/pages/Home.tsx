@@ -6,6 +6,7 @@ import { FeaturedProjects } from "@/components/section/FeaturedProjects";
 import { Hero } from "@/components/section/Hero";
 import { Methodology } from "@/components/section/Methodology";
 import { Skills } from "@/components/section/Skills";
+import { Reveal } from "@/components/ui/Reveal";
 
 export function Home() {
   return (
@@ -14,12 +15,22 @@ export function Home() {
       className="mx-auto min-h-screen max-w-[1440px] overflow-x-hidden"
     >
       <Navbar />
-      <Hero />
+      <Reveal>
+        <Hero />
+      </Reveal>
       <FeaturedProjects />
-      <Methodology />
-      <Experience />
-      <Skills />
-      <Contact />
+      <Reveal>
+        <Methodology />
+      </Reveal>
+      <Reveal>
+        <Experience />
+      </Reveal>
+      <Reveal>
+        <Skills />
+      </Reveal>
+      <Reveal>
+        <Contact />
+      </Reveal>
       <Footer />
     </main>
   );

@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { featuredProjectsData } from "@/data/featureProjects";
+import { Reveal } from "@/components/ui/Reveal";
 
 export function FeaturedProjects() {
   return (
@@ -23,48 +24,51 @@ export function FeaturedProjects() {
         {/* Projects */}
         <div className="mt-12">
           {featuredProjectsData.projects.map((project, index) => (
-            <article
-              key={project.id}
-              className={`grid items-center gap-10 py-8 md:grid-cols-2 md:gap-16 ${
-                index % 2 !== 0 ? "md:[&>*:first-child]:order-2" : ""
-              }`}
-            >
-              {/* Text */}
-              <div className="space-y-6">
-                <p className="text-sm font-medium text-primary">{project.id}</p>
-                <h3 className="text-3xl font-bold text-white md:text-5xl">
-                  {project.title}
-                </h3>
-                <div className="flex flex-wrap gap-3">
-                  {project.tags.map((tag) => (
-                    <Badge key={tag} variant="outline">
-                      {tag}
-                    </Badge>
-                  ))}
+            <Reveal key={project.id} delay={index * 120}>
+              <article
+                className={`grid items-center gap-10 py-8 md:grid-cols-2 md:gap-16 ${
+                  index % 2 !== 0 ? "md:[&>*:first-child]:order-2" : ""
+                }`}
+              >
+                {/* Text */}
+                <div className="space-y-6">
+                  <p className="text-sm font-medium text-primary">
+                    {project.id}
+                  </p>
+                  <h3 className="text-3xl font-bold text-white md:text-5xl">
+                    {project.title}
+                  </h3>
+                  <div className="flex flex-wrap gap-3">
+                    {project.tags.map((tag) => (
+                      <Badge key={tag} variant="outline">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                  <p className="max-w-xl text-base text-primary">
+                    {project.description}
+                  </p>
+                  <Link
+                    to={`/projects/${project.slug}`}
+                    className="inline-flex items-center gap-3 text-base text-white transition-colors duration-300 hover:text-pink-500"
+                  >
+                    {featuredProjectsData.link}
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
                 </div>
-                <p className="max-w-xl text-base text-primary">
-                  {project.description}
-                </p>
-                <Link
-                  to={`/projects/${project.slug}`}
-                  className="inline-flex items-center gap-3 text-base text-white transition-colors duration-300 hover:text-pink-500"
-                >
-                  {featuredProjectsData.link}
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-              </div>
 
-              {/* Image */}
-              <div>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  draggable={false}
-                  onContextMenu={(e) => e.preventDefault()}
-                  className="pointer-events-none h-[300px] w-full select-none rounded-3xl object-cover md:h-auto border-1 border-zinc-800"
-                />
-              </div>
-            </article>
+                {/* Image */}
+                <div>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    draggable={false}
+                    onContextMenu={(e) => e.preventDefault()}
+                    className="pointer-events-none h-[300px] w-full select-none rounded-3xl object-cover md:h-auto border-1 border-zinc-800"
+                  />
+                </div>
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>
