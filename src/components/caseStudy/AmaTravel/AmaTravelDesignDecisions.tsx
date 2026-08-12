@@ -69,7 +69,7 @@ export function AmaTravelDesignDecisions({
                 </div>
               </div>
 
-              <div className="flex min-h-80 items-center justify-center overflow-hidden rounded-2xl border border-border bg-background">
+              <div className="flex min-h-auto md:min-h-80 items-center justify-center overflow-hidden rounded-2xl border border-border bg-background">
                 <img
                   src={item.image}
                   alt={item.imageLabel}
