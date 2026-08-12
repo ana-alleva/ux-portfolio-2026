@@ -277,13 +277,7 @@ export const caseStudies = [
 
       image: aiforceHero,
 
-      actions: [
-        {
-          label: "View Prototype",
-          href: "https://www.figma.com/proto/6b8SRyuki2madfT3sDhYHF/Ana-Clara-Alleva---Portfolio?node-id=9-13971&viewport=42%2C774%2C0.22&t=zER39uegmfJrmeMm-1&scaling=contain&content-scaling=fixed&starting-point-node-id=9%3A13971&page-id=9%3A320",
-          external: true,
-        },
-      ],
+      actions: [],
     },
 
     overview: {
@@ -316,7 +310,7 @@ export const caseStudies = [
       badge: "The Challenge",
       title: "Helping Recruiters Navigate Complex Information",
       description:
-        "A recruiter might be reviewing several roles and dozens of candidates at the same time. The hard part was not simply adding a chat—it was making sure each conversation remembered the right files, candidates, and history.",
+        "A recruiter might be reviewing several roles and dozens of candidates at the same time. The hard part was not simply adding a chat, it was making sure each conversation remembered the right files, candidates, and history.",
 
       cards: [
         {
@@ -409,9 +403,9 @@ export const caseStudies = [
         },
         {
           eyebrow: "AI Conversation",
-          title: "Accessing Candidate Information Through Chat",
+          title: "Designing Tools for AI-Assisted Tasks",
           description:
-            "The chat interface allowed recruiters to upload CVs and files, ask questions, extract information, generate content, and access statistics without leaving the conversation.",
+            "I designed a command panel that gave recruiters quick access to AI-assisted actions such as extracting text, searching information, analyzing files, and generating content within the same workspace.",
           image: aiforceSolution2,
         },
         {
@@ -438,10 +432,6 @@ export const caseStudies = [
         {
           value: "React",
           label: "Implementation",
-        },
-        {
-          value: "Discovery",
-          label: "Delivered",
         },
         {
           value: "3",

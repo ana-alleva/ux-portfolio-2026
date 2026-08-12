@@ -1,5 +1,5 @@
 export const heroData = {
-  badge: "Lead UX/UI Designer",
+  badge: "UX/UI Designer | React Developer",
   title: "From Discovery to Delivery",
   description:
     "I design digital products end to end. From UX flows to polished UI, building scalable design systems and partnering with engineers on React components.",
@@ -9,6 +9,6 @@ export const heroData = {
     "Product Design",
     "UX Research",
     "React Components",
-    "8+ Years Experience",
+    "10 Years Experience",
   ],
 };

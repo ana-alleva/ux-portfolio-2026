@@ -26,7 +26,7 @@ export function CaseStudyInsights({
 
         <h2 className="mt-6 text-5xl text-white">{title}</h2>
 
-        <p className="mt-6 max-w-3xl text-primary">{description}</p>
+        <p className="mt-6 max-w-3xl text-primary leading-8">{description}</p>
 
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           {cards.map((card) => (

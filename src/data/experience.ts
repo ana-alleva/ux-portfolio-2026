@@ -8,7 +8,7 @@ export const experienceData = {
 
   jobs: [
     {
-      years: "Dec 2025—Present",
+      years: "Dec 2025 — Present",
       role: "Senior Lead UX/UI Designer",
       company: "Nortal",
       description:
@@ -16,15 +16,15 @@ export const experienceData = {
     },
 
     {
-      years: "Jul 2025—Dec 2025",
-      role: "UX/UI Designer",
+      years: "Jul 2025 — Dec 2025",
+      role: "Senior UX/UI Designer",
       company: "AMA · Alberta Motor Association",
       description:
         "Conducted UX audits and competitive research for travel insurance experiences, identifying friction across quote, comparison, and purchase journeys.",
     },
 
     {
-      years: "Mar 2023—Jun 2024",
+      years: "Mar 2023 — Jun 2024",
       role: "Full Stack UX/UI Designer",
       company: "Renaiss AI",
       description:
@@ -32,8 +32,8 @@ export const experienceData = {
     },
 
     {
-      years: "2023–2024",
-      role: "Senior UX/UI Designer · Freelance",
+      years: "Jun 2024 - Jun 2025",
+      role: "Full Stack UX/UI · Freelance",
       company: "Sunshift Dev",
       description:
         "Designing a B2B SaaS platform for managing employee cards across Apple Wallet and Google Wallet, including automation, notification, and communication workflows.",

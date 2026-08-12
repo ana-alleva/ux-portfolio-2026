@@ -45,7 +45,7 @@ export function Hero() {
             <span>Nortal</span>
             <span>IOHK</span>
             <span>ConnectXD</span>
-            <span>Aluxion</span>
+            <span>Renaiss AI</span>
             <span>Atix Labs</span>
           </div>
         </div>
