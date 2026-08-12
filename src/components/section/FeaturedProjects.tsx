@@ -38,12 +38,31 @@ export function FeaturedProjects() {
                   <h3 className="text-3xl font-bold text-white md:text-5xl">
                     {project.title}
                   </h3>
-                  <div className="flex flex-wrap gap-3">
-                    {project.tags.map((tag) => (
-                      <Badge key={tag} variant="outline">
-                        {tag}
-                      </Badge>
-                    ))}
+                  <div className="grid grid-cols-3 gap-6 border-y border-white/10 py-4">
+                    <div>
+                      <p className="text-xs uppercase tracking-widest text-zinc-500">
+                        Problem
+                      </p>
+                      <p className="mt-2 text-sm text-white">
+                        {project.problem}
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="text-xs uppercase tracking-widest text-zinc-500">
+                        Role
+                      </p>
+                      <p className="mt-2 text-sm text-white">{project.role}</p>
+                    </div>
+
+                    <div>
+                      <p className="text-xs uppercase tracking-widest text-zinc-500">
+                        Outcome
+                      </p>
+                      <p className="mt-2 text-sm text-white">
+                        {project.outcome}
+                      </p>
+                    </div>
                   </div>
                   <p className="max-w-xl text-base text-primary">
                     {project.description}
@@ -59,13 +78,19 @@ export function FeaturedProjects() {
 
                 {/* Image */}
                 <div>
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    draggable={false}
-                    onContextMenu={(e) => e.preventDefault()}
-                    className="pointer-events-none h-[300px] w-full select-none rounded-3xl object-cover md:h-auto border-1 border-zinc-800"
-                  />
+                  <Link
+                    to={`/projects/${project.slug}`}
+                    aria-label={`View ${project.title} case study`}
+                    className="group block overflow-hidden rounded-3xl"
+                  >
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      draggable={false}
+                      onContextMenu={(e) => e.preventDefault()}
+                      className="pointer-events-none h-auto w-full select-none rounded-3xl border border-zinc-800 object-contain"
+                    />
+                  </Link>
                 </div>
               </article>
             </Reveal>

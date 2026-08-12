@@ -57,7 +57,7 @@ export function CaseStudySolution({
               alt={feature.title}
               draggable={false}
               onContextMenu={(event) => event.preventDefault()}
-              className="pointer-events-none h-auto md:h-[300px] w-full select-none rounded-3xl object-cover md:h-auto border-1 border-zinc-800"
+              className="pointer-events-none h-auto w-full select-none rounded-3xl border border-zinc-800 object-contain"
             />
           </article>
         ))}

@@ -5,9 +5,9 @@ type AmaTravelRoleProps = {
 
 export function AmaTravelRole({ title, items }: AmaTravelRoleProps) {
   return (
-    <section className="mx-auto max-w-7xl">
+    <section className="mx-auto max-w-7xl px-8">
       {/* ana sacaste py-28  */}
-      <div className="rounded-2xl border border-border bg-card p-6 md:p-10">
+      <div className="rounded-2xl border border-border bg-card px-8 p-6 md:p-10">
         <h2 className="text-4xl leading-none text-white md:text-5xl">
           {title}
         </h2>

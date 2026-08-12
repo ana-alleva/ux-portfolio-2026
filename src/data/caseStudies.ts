@@ -27,7 +27,7 @@ export const caseStudies = [
     slug: "travel-insurance-audit",
 
     hero: {
-      badge: "UX Research • Audit",
+      badge: "Travel Insurance",
       title: "Making Travel Insurance Easier to Understand and Compare",
       description:
         "I reviewed the travel insurance journey to understand where people get confused, hesitate, or abandon the purchase.",
@@ -270,7 +270,7 @@ export const caseStudies = [
     slug: "rh-ai-product",
 
     hero: {
-      badge: "AI Product Design • Visual Design • Recruitment",
+      badge: "AI Product Design",
       title: "Airforce AI Workspace",
       description:
         "I designed a recruiting workspace where conversations, CVs, files, and AI-generated information stayed connected instead of living across separate tools.",
@@ -452,7 +452,7 @@ export const caseStudies = [
     slug: "atala-prism",
 
     hero: {
-      badge: "Decentralized Identity • Product Design • React",
+      badge: "Decentralized Identity",
       title: "Atala PRISM",
       description:
         "Designing a connected digital credential ecosystem for issuing, receiving, managing, and verifying credentials across web, mobile, and browser experiences.",
@@ -649,7 +649,7 @@ export const caseStudies = [
     slug: "cxd",
 
     hero: {
-      badge: "UI Design • Enterprise Platform",
+      badge: "Enterprise Platform",
       title: "ConnectXD",
       description:
         "Designing an enterprise platform for creating and delivering personalized employee benefits across messages, forms, email, and digital wallet experiences.",
