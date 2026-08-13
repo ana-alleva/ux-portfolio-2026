@@ -1,6 +1,5 @@
 import profileImage from "@/assets/alleva-ana.png";
 import { heroData } from "@/data/hero";
-import { Badge } from "@/components/ui/badge";
 
 export function Hero() {
   return (
