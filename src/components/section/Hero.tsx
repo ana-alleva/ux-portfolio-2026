@@ -1,5 +1,4 @@
 import profileImage from "@/assets/alleva-ana.png";
-
 import { heroData } from "@/data/hero";
 import { Badge } from "@/components/ui/badge";
 
@@ -26,7 +25,7 @@ export function Hero() {
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary md:text-xl">
           {heroData.description}
         </p>
-
+        {/* 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           {heroData.badges.map((badge) => (
             <Badge key={badge} variant="outline">
@@ -34,21 +33,7 @@ export function Hero() {
             </Badge>
           ))}
         </div>
-
-        {/* Worked with */}
-        <div className="mt-16 flex w-full flex-col items-center border-y border-white/10 py-10">
-          <p className="mb-8 text-xs uppercase tracking-[0.3em] text-primary">
-            Selected work includes projects with
-          </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 text-lg font-semibold tracking-wide text-white/70 md:text-xl">
-            <span>Nortal</span>
-            <span>IOHK</span>
-            <span>ConnectXD</span>
-            <span>Renaiss AI</span>
-            <span>Atix Labs</span>
-          </div>
-        </div>
+        */}
       </div>
     </section>
   );

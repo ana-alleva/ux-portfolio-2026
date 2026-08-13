@@ -9,7 +9,9 @@ export function Experience() {
         <Badge>{experienceData.badge}</Badge>
 
         <div className="mt-6">
-          <h2 className="mt-6 text-5xl text-white">{experienceData.title}</h2>
+          <h2 className="mt-6 max-w-4xl text-3xl font-bold leading-none text-white md:text-5xl">
+            {experienceData.title}
+          </h2>
 
           <p className="mt-6 max-w-2xl text-primary">
             {experienceData.description}

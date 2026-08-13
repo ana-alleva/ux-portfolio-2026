@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import { featuredProjectsData } from "@/data/featureProjects";
 import { Reveal } from "@/components/ui/Reveal";
 
@@ -8,21 +7,8 @@ export function FeaturedProjects() {
   return (
     <section id="featuredProjects" className="scroll-mt-28 px-8 py-4">
       <div className="mx-auto max-w-7xl">
-        {/* Header */}
-        <div className="mb-16 flex flex-col items-center text-center">
-          <Badge variant="outline">{featuredProjectsData.badge}</Badge>
-
-          <h2 className="mt-6 max-w-4xl text-3xl font-bold leading-none text-white md:text-5xl">
-            {featuredProjectsData.title}
-          </h2>
-
-          <p className="mt-4 max-w-2xl text-sm text-primary md:text-lg">
-            {featuredProjectsData.description}
-          </p>
-        </div>
-
         {/* Projects */}
-        <div className="mt-12">
+        <div className="mt-8">
           {featuredProjectsData.projects.map((project, index) => (
             <Reveal key={project.id} delay={index * 120}>
               <article
@@ -69,10 +55,14 @@ export function FeaturedProjects() {
                   </p>
                   <Link
                     to={`/projects/${project.slug}`}
-                    className="inline-flex items-center gap-3 text-base text-white transition-colors duration-300 hover:text-pink-500"
+                    className="group/link inline-flex items-center gap-3 text-base font-medium text-pink-500"
                   >
-                    {featuredProjectsData.link}
-                    <ArrowRight className="h-4 w-4" />
+                    <span className="relative">
+                      {featuredProjectsData.link}
+                      <span className="absolute -bottom-1 left-0 h-px w-0 bg-pink-500 transition-all duration-300 group-hover/link:w-full" />
+                    </span>
+
+                    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-1" />
                   </Link>
                 </div>
 
@@ -88,7 +78,11 @@ export function FeaturedProjects() {
                       alt={project.title}
                       draggable={false}
                       onContextMenu={(e) => e.preventDefault()}
-                      className="pointer-events-none h-auto w-full select-none rounded-3xl border border-zinc-800 object-contain"
+                      className="pointer-events-none h-auto w-full select-none rounded-3xl
+  border border-zinc-800 object-contain
+  transition-all duration-500 ease-out
+  group-hover:scale-[1.02]
+  group-hover:brightness-75"
                     />
                   </Link>
                 </div>
