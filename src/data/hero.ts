@@ -2,7 +2,7 @@ export const heroData = {
   badge: "UX/UI Designer | React Collaborator",
   title: "From Discovery to Delivery",
   description:
-    "I turn complex product requirements into clear, intuitive digital experiences—from UX flows to polished UI, design systems, and React components.",
+    "I translate complex product requirements into clear, intuitive experiences, bridging UX, visual design, design systems, and implementation.",
   buttonPrimary: "View Selected Work",
   buttonSecondary: "Contact Me",
   badges: [
