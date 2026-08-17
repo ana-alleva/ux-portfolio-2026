@@ -275,7 +275,13 @@ export const caseStudies = [
       description:
         "I designed a recruiting workspace where conversations, CVs, files, and AI-generated information stayed connected instead of living across separate tools.",
 
-      image: aiforceHero,
+      images: [
+        aiforceHero,
+        aiforceResearch,
+        aiforceSolution1,
+        aiforceSolution2,
+        aiforceSolution3,
+      ],
 
       actions: [],
     },
@@ -457,7 +463,7 @@ export const caseStudies = [
       description:
         "Designing a connected digital credential ecosystem for issuing, receiving, managing, and verifying credentials across web, mobile, and browser experiences.",
 
-      image: atalaHero,
+      images: [atalaHero, atalaSolution1, atalaSolution2, atalaSolution3],
 
       actions: [
         {
@@ -654,7 +660,7 @@ export const caseStudies = [
       description:
         "Designing an enterprise platform for creating and delivering personalized employee benefits across messages, forms, email, and digital wallet experiences.",
 
-      image: cxdHero,
+      images: [cxdHero, cxdResearch, cxdSolution1, cxdSolution2, cxdSolution3],
 
       actions: [
         {

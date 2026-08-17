@@ -13,6 +13,7 @@ import { CaseStudySolution } from "@/components/caseStudy/CaseStudySolution";
 import { CaseStudyResults } from "@/components/caseStudy/CaseStudyResults";
 import { CaseStudyNavigation } from "@/components/caseStudy/CaseStudyNavigation";
 import { AmaTravelCaseStudy } from "@/components/caseStudy/AmaTravelCaseStudy";
+import { CaseStudyCarousel } from "@/components/caseStudy/CaseStudyCarousel";
 
 export function CaseStudy() {
   const { slug } = useParams();
@@ -94,13 +95,20 @@ export function CaseStudy() {
           </div>
         )}
 
-        <img
-          src={caseStudy.hero.image}
-          alt={caseStudy.hero.title}
-          draggable={false}
-          onContextMenu={(event) => event.preventDefault()}
-          className="mt-8 h-auto w-full rounded-xl object-contain md:mt-20 md:rounded-3xl border-1 border-zinc-800"
-        />
+        {caseStudy.hero.images ? (
+          <CaseStudyCarousel
+            images={caseStudy.hero.images}
+            title={caseStudy.hero.title}
+          />
+        ) : (
+          <img
+            src={caseStudy.hero.image}
+            alt={caseStudy.hero.title}
+            draggable={false}
+            onContextMenu={(event) => event.preventDefault()}
+            className="mt-8 h-auto w-full rounded-xl object-contain md:mt-20 md:rounded-3xl"
+          />
+        )}
 
         <CaseStudyOverview
           badge={caseStudy.overview.badge}
