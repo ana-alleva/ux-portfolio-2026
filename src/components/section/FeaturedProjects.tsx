@@ -10,13 +10,13 @@ export function FeaturedProjects() {
       <div className="mx-auto max-w-7xl">
         {/* Projects */}
         <div className="mt-8">
-          <div className="-mt-32 mb-4 flex justify-center md:-mt-40 md:mb-8">
+          <div className="hidden md:flex -mt-32 mb-4 justify-center md:-mt-40 md:mb-8">
             <ScrollIndicator />
           </div>
           {featuredProjectsData.projects.map((project, index) => (
             <Reveal key={project.id} delay={index * 120}>
               <article
-                className={`grid items-center gap-10 py-8 md:grid-cols-2 md:gap-16 ${
+                className={`grid items-start gap-10 pt-0 md:pt-12 pb-8 md:grid-cols-2 md:items-center md:gap-16 md:py-8 ${
                   index % 2 !== 0 ? "md:[&>*:first-child]:order-2" : ""
                 }`}
               >
@@ -28,7 +28,7 @@ export function FeaturedProjects() {
                   <h3 className="text-3xl text-white md:text-5xl">
                     {project.title}
                   </h3>
-                  <div className="grid grid-cols-3 gap-6 border-y border-white/10 py-4">
+                  <div className="grid grid-cols-1 gap-4 border-y border-white/10 py-4 sm:grid-cols-3 sm:gap-6">
                     <div>
                       <p className="text-xs uppercase tracking-widest text-zinc-500">
                         Problem
