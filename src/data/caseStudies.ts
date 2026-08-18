@@ -463,7 +463,7 @@ export const caseStudies = [
       description:
         "Designing a connected digital credential ecosystem for issuing, receiving, managing, and verifying credentials across web, mobile, and browser experiences.",
 
-      images: [atalaHero, atalaSolution1, atalaSolution2, atalaSolution3],
+      images: [atalaHero, atalaSolution2, atalaSolution3],
 
       actions: [
         {
