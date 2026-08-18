@@ -1,5 +1,5 @@
-import { Link, useParams } from "react-router";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { useParams } from "react-router";
+import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Footer } from "@/components/layout/Footer";
@@ -14,6 +14,7 @@ import { CaseStudyResults } from "@/components/caseStudy/CaseStudyResults";
 import { CaseStudyNavigation } from "@/components/caseStudy/CaseStudyNavigation";
 import { AmaTravelCaseStudy } from "@/components/caseStudy/AmaTravelCaseStudy";
 import { CaseStudyCarousel } from "@/components/caseStudy/CaseStudyCarousel";
+import { CaseStudyTopNavigation } from "@/components/caseStudy/CaseStudyTopNavigation";
 
 export function CaseStudy() {
   const { slug } = useParams();
@@ -53,13 +54,7 @@ export function CaseStudy() {
 
       <section className="mx-auto max-w-7xl px-8 pb-20 pt-24 md:pt-32">
         <div className="mt-4 flex flex-col items-start gap-4 md:mt-0">
-          <Link
-            to="/#featuredProjects"
-            className="inline-flex items-center gap-2 text-primary transition-colors hover:text-pink-500"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to Portfolio
-          </Link>
+          <CaseStudyTopNavigation currentSlug={caseStudy.slug} />
 
           <Badge variant="outline">{caseStudy.hero.badge}</Badge>
         </div>

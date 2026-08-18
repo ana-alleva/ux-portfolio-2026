@@ -1,7 +1,7 @@
-import { Link } from "react-router";
-import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { CaseStudyTopNavigation } from "@/components/caseStudy/CaseStudyTopNavigation";
+import { ExternalLink } from "lucide-react";
 
 type HeroDetail = {
   label: string;
@@ -34,19 +34,13 @@ export function AmaTravelHero({
   return (
     <section id="top" className="mx-auto max-w-7xl px-8 pt-24 md:pt-32">
       <div className="flex flex-col items-start">
-        <Link
-          to="/#featuredProjects"
-          className="inline-flex items-center gap-2 text-primary transition-colors hover:text-pink-500"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          Back to Portfolio
-        </Link>
+        <CaseStudyTopNavigation currentSlug="travel-insurance-audit" />
 
         <Badge variant="outline" className="mt-6">
           {badge}
         </Badge>
 
-        <h1 className="mt-6 max-w-5xl text-4xl font-bold leading-none text-white md:text-7xl lg:text-8xl">
+        <h1 className="mt-6 max-w-5xl text-4xl leading-none text-white md:text-7xl lg:text-8xl">
           {title}
         </h1>
 
