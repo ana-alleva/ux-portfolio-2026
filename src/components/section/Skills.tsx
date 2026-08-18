@@ -8,7 +8,7 @@ export function Skills() {
       <div className="mx-auto max-w-7xl">
         <Badge variant="outline">{skillsData.badge}</Badge>
 
-        <h2 className="mt-6 max-w-4xl text-3xl font-bold leading-none text-white md:text-5xl">
+        <h2 className="mt-6 max-w-4xl text-3xl leading-none text-white md:text-5xl">
           {skillsData.title}
         </h2>
 

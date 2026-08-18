@@ -21,7 +21,7 @@ export function FeaturedProjects() {
                   <p className="text-sm font-medium text-primary">
                     {project.id}
                   </p>
-                  <h3 className="text-3xl font-bold text-white md:text-5xl">
+                  <h3 className="text-3xl text-white md:text-5xl">
                     {project.title}
                   </h3>
                   <div className="grid grid-cols-3 gap-6 border-y border-white/10 py-4">
