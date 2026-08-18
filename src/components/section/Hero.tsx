@@ -11,7 +11,7 @@ export function Hero() {
           alt="Ana Clara Alleva"
           draggable={false}
           onContextMenu={(event) => event.preventDefault()}
-          className="mb-8 h-24 w-24 rounded-full border border-white/10 object-cover shadow-2xl md:h-36 md:w-36"
+          className="mb-8 h-24 w-24 rounded-full border border-white/10 object-cover shadow-2xl md:h-24 md:w-24"
         />
 
         <p className="text-xs uppercase tracking-[0.3em] text-primary md:text-sm">
