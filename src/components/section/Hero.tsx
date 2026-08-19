@@ -1,4 +1,5 @@
 import { heroData } from "@/data/hero";
+import { Reveal } from "@/components/ui/Reveal";
 import heroShowcase from "@/assets/hero-showcase.png";
 import { ScrollIndicator } from "@/components/ui/ScrollIndicator";
 
@@ -46,10 +47,11 @@ export function Hero() {
         </div>
 
         {/* RIGHT */}
-        <div className="relative hidden lg:block">
-          {/* Pink ambient glow */}
-          <div
-            className="
+        <Reveal delay={200}>
+          <div className="relative hidden lg:block">
+            {/* Pink ambient glow */}
+            <div
+              className="
       pointer-events-none
       absolute
       left-1/2
@@ -62,17 +64,18 @@ export function Hero() {
       bg-pink-500/50
       blur-[120px]
     "
-          />
+            />
 
-          {/* Artwork */}
-          <img
-            src={heroShowcase}
-            alt="Selected product design work"
-            draggable={false}
-            onContextMenu={(event) => event.preventDefault()}
-            className="relative z-10 h-auto w-full object-contain"
-          />
-        </div>
+            {/* Artwork */}
+            <img
+              src={heroShowcase}
+              alt="Selected product design work"
+              draggable={false}
+              onContextMenu={(event) => event.preventDefault()}
+              className="relative z-10 h-auto w-full object-contain"
+            />
+          </div>
+        </Reveal>
       </div>
 
       <div className="hidden md:flex mb-4 justify-center md:mb-8">
