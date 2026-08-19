@@ -30,7 +30,7 @@ export function Hero() {
             </div>
 
             <div>
-              <p className="text-3xl font-semibold text-pink-500">20+</p>
+              <p className="text-3xl font-semibold text-pink-500">10+</p>
               <p className="mt-2 text-[10px] uppercase tracking-wider text-zinc-500">
                 Products Designed
               </p>
