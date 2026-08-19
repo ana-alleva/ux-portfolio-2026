@@ -2,7 +2,6 @@ import { Link } from "react-router";
 import { ArrowRight } from "lucide-react";
 import { featuredProjectsData } from "@/data/featureProjects";
 import { Reveal } from "@/components/ui/Reveal";
-import { ScrollIndicator } from "@/components/ui/ScrollIndicator";
 
 export function FeaturedProjects() {
   return (
@@ -10,9 +9,6 @@ export function FeaturedProjects() {
       <div className="mx-auto max-w-7xl">
         {/* Projects */}
         <div className="mt-8">
-          <div className="hidden md:flex -mt-32 mb-4 justify-center md:-mt-40 md:mb-8">
-            <ScrollIndicator />
-          </div>
           {featuredProjectsData.projects.map((project, index) => (
             <Reveal key={project.id} delay={index * 120}>
               <article
