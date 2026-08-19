@@ -662,13 +662,7 @@ export const caseStudies = [
 
       images: [cxdHero, cxdResearch, cxdSolution1, cxdSolution2, cxdSolution3],
 
-      actions: [
-        {
-          label: "View Live Demo",
-          href: "https://www.youtube.com/watch?v=wemcgPA3IPQ",
-          external: true,
-        },
-      ],
+      actions: [],
     },
 
     overview: {
