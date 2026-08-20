@@ -5,10 +5,10 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function FeaturedProjects() {
   return (
-    <section id="featuredProjects" className="scroll-mt-28 px-8 py-4">
+    <section id="featuredProjects" className="scroll-mt-28 px-8">
       <div className="mx-auto max-w-7xl">
         {/* Projects */}
-        <div className="mt-8">
+        <div>
           {featuredProjectsData.projects.map((project, index) => (
             <Reveal key={project.id} delay={index * 120}>
               <article

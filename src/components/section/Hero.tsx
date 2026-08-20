@@ -82,7 +82,7 @@ export function Hero() {
         <ScrollIndicator />
       </div>
       {/* WORKED WITH */}
-      <div className="mx-auto mt-16 flex max-w-7xl flex-col items-center border-y border-white/10 py-10 md:mt-20">
+      <div className="mx-auto mt-4 flex max-w-7xl flex-col items-center border-y border-white/10 py-10 md:mt-8">
         <p className="mb-8 text-center text-xs uppercase tracking-[0.3em] text-primary">
           Selected work includes projects with
         </p>
