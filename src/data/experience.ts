@@ -12,31 +12,29 @@ export const experienceData = {
       role: "Senior Lead UX/UI Designer",
       company: "Nortal",
       description:
-        "Lead UX discovery and product design for complex platforms, from research and workflow analysis to scalable experiences and design systems",
+        "Led the discovery and design of a construction project management platform, from user research to end-to-end experiences for project creation, dashboards, and collaboration, including AI-powered workflows for blueprint comparison and 3D model generation.",
     },
 
     {
       years: "Jul 2025 — Dec 2025",
       role: "Senior UX/UI Designer",
-      company: "AMA · Alberta Motor Association",
+      company: "AMA • Contract",
       description:
-        "Conducted UX audits and competitive research for travel insurance experiences, identifying friction across quote, comparison, and purchase journeys.",
+        "Conducted UX audit and competitive analysis to identify friction in the travel insurance purchase flow. Redesigned the plan comparison experience to improve clarity, reduce cognitive load, and support faster decision-making.",
     },
-
+    {
+      years: "Jun 2024 — Jun 2025",
+      role: "Senior UX/UI Designer",
+      company: "Sunshift Dev • Contract",
+      description:
+        "Designed secure digital credential experiences for complex identity workflows, simplifying how users create, manage, issue, and verify credentials.",
+    },
     {
       years: "Mar 2023 — Jun 2024",
       role: "Full Stack UX/UI Designer",
-      company: "Renaiss AI",
+      company: "Renaiss",
       description:
-        "Designed end-to-end experiences for an AI recruiting platform, covering matching, content workflows, and collaborative spaces.",
-    },
-
-    {
-      years: "Jun 2024 - Jun 2025",
-      role: "Full Stack UX/UI · Freelance",
-      company: "Sunshift Dev",
-      description:
-        "Designing a B2B SaaS platform for managing employee cards across Apple Wallet and Google Wallet, including automation, notification, and communication workflows.",
+        "Designed AI-powered conversational experiences that simplify complex workflows and help users access information and complete tasks more efficiently.",
     },
   ],
 };

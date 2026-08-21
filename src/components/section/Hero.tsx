@@ -6,39 +6,45 @@ import { ScrollIndicator } from "@/components/ui/ScrollIndicator";
 export function Hero() {
   return (
     <section id="hero" className="px-6 pb-16 pt-28 md:px-12 md:pb-10 md:pt-32">
-      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 xl:grid-cols-[0.9fr_1.1fr] xl:gap-16">
         {/* LEFT */}
         <div className="w-full min-w-0">
           <p className="text-xs uppercase tracking-[0.3em] text-pink-500 md:text-sm">
             {heroData.badge}
           </p>
 
-          <h1 className="mt-6 max-w-3xl text-5xl leading-[0.95] text-white md:text-7xl lg:text-8xl">
+          <h1 className="mt-6 w-full text-5xl leading-[0.95] text-white md:text-6xl xl:max-w-3xl xl:text-8xl">
             {heroData.title}
           </h1>
 
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-primary md:text-xl">
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-primary md:text-xl xl:max-w-xl">
             {heroData.description}
           </p>
 
           {/* STATS */}
-          <div className="mt-10 grid w-full grid-cols-1 gap-6 border-t border-white/10 py-6 sm:grid-cols-3 sm:gap-4 md:gap-8 lg:max-w-xl">
+          <div className="mt-10 grid w-full grid-cols-3 gap-3 border-t border-white/10 py-6 sm:gap-4 md:gap-8 xl:max-w-xl">
             <div>
-              <p className="text-3xl font-semibold text-pink-500">10+</p>
+              <p className="text-2xl font-semibold text-pink-500 md:text-3xl">
+                10+
+              </p>
               <p className="mt-2 text-[10px] uppercase tracking-wider text-zinc-500">
                 Years Experience
               </p>
             </div>
 
             <div>
-              <p className="text-3xl font-semibold text-pink-500">10+</p>
+              <p className="text-2xl font-semibold text-pink-500 md:text-3xl">
+                10+
+              </p>
               <p className="mt-2 text-[10px] uppercase tracking-wider text-zinc-500">
                 Products Designed
               </p>
             </div>
 
             <div>
-              <p className="text-3xl font-semibold text-pink-500">B2B</p>
+              <p className="text-2xl font-semibold text-pink-500 md:text-3xl">
+                B2B
+              </p>
               <p className="mt-2 text-[10px] uppercase tracking-wider text-zinc-500">
                 SaaS & AI
               </p>
@@ -48,7 +54,7 @@ export function Hero() {
 
         {/* RIGHT */}
         <Reveal delay={200}>
-          <div className="relative hidden lg:block">
+          <div className="relative hidden xl:block">
             {/* Pink ambient glow */}
             <div
               className="
