@@ -14,6 +14,7 @@ import cxdHero from "@/assets/cxd/hero.png";
 import cxdResearch from "@/assets/cxd/research.png";
 import cxdSolution1 from "@/assets/cxd/solution-1.png";
 import cxdSolution2 from "@/assets/cxd/solution-2.png";
+import cxdoverview from "@/assets/cxd/overview.png";
 import cxdSolution3 from "@/assets/cxd/solution-3.png";
 
 import travelHero from "@/assets/travel/travelCaseHero.png";
@@ -660,7 +661,7 @@ export const caseStudies = [
       description:
         "Designing an enterprise platform for creating and delivering personalized employee benefits across messages, forms, email, and digital wallet experiences.",
 
-      images: [cxdHero, cxdResearch, cxdSolution1, cxdSolution2, cxdSolution3],
+      images: [cxdHero, cxdResearch, cxdSolution1, cxdoverview, cxdSolution3],
 
       actions: [],
     },
